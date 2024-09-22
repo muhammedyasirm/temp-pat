@@ -22,9 +22,11 @@ const ProfitAssurance = () => {
       <div className="flex gap-28 justify-center lg-down:flex-col">
         <div className="flex flex-col w-[40%] lg-down:w-full">
           <div className="text-left mb-12 mt-4">
-            <h1 className="text-6xl md-down:text-3xl font-bold font-barlow uppercase tracking-wide">
-              PROFIT ASSURANCE TECHNOLOGY
-            </h1>
+            <img
+              src="/pat-text-white.png"
+              alt="Profit Assurance Technology"
+              className="h-[11rem] md-down:h-[9rem]"
+            />
           </div>
           <div className="text-left mt-5 md-down:mt-0">
             <h3 className="text-4xl md-down:text-xl font-semibold mb-4 font-montserrat">
@@ -40,7 +42,7 @@ const ProfitAssurance = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-end gap-10 w-[42%] lg-down:w-full lg-down:mt-10">
+        <div className="flex flex-col justify-end gap-10 w-[42%] lg-down:w-full ">
           {infoItems.map((item, index) => (
             <div key={index} className="flex gap-8">
               <img

@@ -6,6 +6,7 @@ import HomePage from "./pages/Home/homePage";
 import ContactPage from "./pages/Contact/contactPage";
 import BlogPage from "./pages/Blog/blog";
 import CaseStudyPage from "./pages/CaseStudy/caseStudy";
+import EventPage from "./pages/Event/eventPage";
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
       <>
         <HeaderTop />
         <Routes>
-          <Route path="/" element={<HomePage />} /> {/* Set HomePage */}
+          <Route path="/" element={<HomePage />} />
           {/* <Route path="/service" element={<ServicePage />} /> */}
           <Route path="/case-study" element={<CaseStudyPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/events" element={<EventPage />} />
         </Routes>
         <Footer />
       </>
