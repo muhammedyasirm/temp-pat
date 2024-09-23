@@ -4,7 +4,6 @@ import CompactHeader from "./compactHeader";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  let timer;
 
   const navItems = [
     { name: "HOME", to: "/" },
@@ -22,7 +21,7 @@ const Header = () => {
         { name: "REVENUE ASSURANCE MS", to: "/service2" },
         { name: "FINANCIAL IMPROVEMENT", to: "/service3" },
       ],
-      border: "border-red-500",
+      border: "border-primary-orange",
     },
     {
       category: [
@@ -30,25 +29,22 @@ const Header = () => {
         { name: "FRAUD MANAGEMENT", to: "/service5" },
         { name: "ASSET MANAGEMENT", to: "/service6" },
       ],
-      border: "border-green-500",
+      border: "border-primary-green",
     },
     {
       category: [
         { name: "PAYMENT SOLUTIONS", to: "/service7" },
       ],
-      border: "border-cyan-500",
+      border: "border-primary-blue",
     },
   ];
 
   const handleMouseEnter = () => {
-    clearTimeout(timer);
     setShowDropdown(true);
   };
 
   const handleMouseLeave = () => {
-    timer = setTimeout(() => {
-      setShowDropdown(false);
-    }, 300); 
+    setShowDropdown(false);
   };
 
   return (
@@ -67,50 +63,62 @@ const Header = () => {
           <nav>
             <ul className="flex justify-center space-x-8 py-3 text-sm font-montserrat">
               {navItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="relative group"
-                  onMouseEnter={item.name === "SERVICES" ? handleMouseEnter : null}
-                  onMouseLeave={item.name === "SERVICES" ? handleMouseLeave : null}
-                >
-                  <Link
-                    to={item.to}
-                    className="hover:text-primary-orange flex items-center"
-                  >
-                    {item.name}
-                    {item.name === "SERVICES" && (
-                      <span className="ml-1">▾</span>
-                    )}
-                  </Link>
-
-                  {item.name === "SERVICES" && showDropdown && (
+                <li key={index} className="relative group">
+                  {item.name === "SERVICES" ? (
+                    // Wrap the SERVICES item and dropdown in a container to handle the hover state
                     <div
-                      className="absolute left-[-10rem] bg-black text-white mt-2 p-4 shadow-lg z-50 grid grid-cols-3 gap-8 w-[800px] max-w-[800px]"
+                      className="relative"
                       onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave} 
+                      onMouseLeave={handleMouseLeave}
                     >
-                      {serviceSubItems.map((subCategory, subIndex) => (
-                        <ul
-                          key={subIndex}
-                          className={`border-l-4 pl-4 ${subCategory.border} `}
+                      <Link
+                        to={item.to}
+                        className="hover:text-primary-orange flex items-center"
+                      >
+                        {item.name}
+                        <span className="ml-1">▾</span>
+                      </Link>
+
+                      {showDropdown && (
+                        <div
+                          className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-3 gap-8 w-[800px] max-w-[800px] ${
+                        showDropdown ? 'block animate-slideDown' : 'hidden animate-slideUp'
+                      }`}
+
                         >
-                          {subCategory.category.map((subItem, itemIndex) => (
-                            <li key={itemIndex} className="py-4 px-2 hover:bg-gray-800">
-                              <Link to={subItem.to} className="text-sm">
-                                {subItem.name}
-                              </Link>
-                            </li>
+                          {serviceSubItems.map((subCategory, subIndex) => (
+                            <ul
+                              key={subIndex}
+                              className={`border-l-2 pl-4 ${subCategory.border}`}
+                            >
+                              {subCategory.category.map((subItem, itemIndex) => (
+                                <li
+                                  key={itemIndex}
+                                  className="py-4 px-2 hover:bg-gray-800"
+                                >
+                                  <Link to={subItem.to} className="text-sm">
+                                    {subItem.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
                           ))}
-                        </ul>
-                      ))}
+                        </div>
+                      )}
                     </div>
+                  ) : (
+                    <Link
+                      to={item.to}
+                      className="hover:text-primary-orange flex items-center"
+                    >
+                      {item.name}
+                    </Link>
                   )}
                 </li>
               ))}
             </ul>
           </nav>
 
-          {/* Logo */}
           <div className="flex items-center space-x-4">
             <img
               src="/profit-assurance-logo.png"
@@ -121,7 +129,6 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Compact Header for small screens */}
       <div className="hidden lg-down:block">
         <CompactHeader />
       </div>

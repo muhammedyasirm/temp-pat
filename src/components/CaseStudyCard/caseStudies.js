@@ -10,6 +10,7 @@ const caseStudies = [
     quote: '“React Flow has allowed us to scale our customer engagement workflows effortlessly, providing a seamless experience for our users and team.”',
     authorName: 'Lee Munroe',
     authorPosition: 'Head of Design at OneSignal',
+    borderColor: 'border-primary-orange',
   },
   {
     image: '/chart2.png',
@@ -22,6 +23,7 @@ const caseStudies = [
     quote: '“React Flow transformed our approach to data visualization, making it interactive and insightful for all our users.”',
     authorName: 'Tobias Meixner',
     authorPosition: 'Co-Founder of Hubql',
+    borderColor: 'border-primary-green',
   },
   {
     image: '/chart3.png',
@@ -34,6 +36,7 @@ const caseStudies = [
     quote: '“With RAMS, we have significantly reduced revenue leakage and enhanced our billing accuracy. A game-changer for our operations.”',
     authorName: 'John Doe',
     authorPosition: 'Revenue Assurance Specialist',
+    borderColor: 'border-primary-blue',
   },
   {
     image: '/chart2.png',
@@ -46,6 +49,7 @@ const caseStudies = [
     quote: '“The new workflow automation system has transformed our order processing, making it faster and more reliable.”',
     authorName: 'Jane Smith',
     authorPosition: 'Workflow Automation Engineer',
+    borderColor: 'border-primary-green',
   },
   {
     image: '/chart3.png',
@@ -58,6 +62,7 @@ const caseStudies = [
     quote: '“The optimized cloud infrastructure has enabled us to cut costs significantly while maintaining high performance and scalability.”',
     authorName: 'Emily Clark',
     authorPosition: 'Cloud Infrastructure Specialist',
+    borderColor: 'border-primary-blue',
   },
   {
     image: '/chart1.png',
@@ -70,6 +75,7 @@ const caseStudies = [
     quote: '“AI-powered chatbots have revolutionized our customer support, drastically reducing response times and improving satisfaction.”',
     authorName: 'Michael Turner',
     authorPosition: 'AI Solutions Architect',
+    borderColor: 'border-primary-orange',
   },
 ];
 

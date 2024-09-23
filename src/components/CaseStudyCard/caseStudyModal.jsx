@@ -48,7 +48,7 @@ const CaseStudyModal = ({
                 <p className="text-gray-700 mt-2">{challenge}</p>
               </div>
               <div className="flex flex-col">
-                <div className="bg-[#1F1F1F] bg-opacity-60 p-6 lg-down:p-3 rounded-lg shadow-lg text-center">
+                <div className="bg-[#1F1F1F] bg-opacity-30 p-6 lg-down:p-3 rounded-lg shadow-lg text-center">
                   <div className="text-center text-primary-orange text-4xl font-bold">
                     “
                   </div>

@@ -13,12 +13,12 @@ const CaseStudyCard = ({
   quote,
   authorName,
   authorPosition,
+  borderColor,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState({}); // State to store modal data
 
   const openModal = () => {
-    // Set the data for the modal
     setModalData({
       image,
       stats: [
@@ -46,7 +46,7 @@ const CaseStudyCard = ({
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+    <div className={`max-w-md mx-auto bg-[#232323] bg-opacity-[80%] rounded-lg shadow-md overflow-hidden border-2 ${borderColor}`}>
       <div className="flex flex-col p-8 sm-down:p-4">
         <div className="md:flex-shrink-0 ">
           <img
@@ -56,28 +56,28 @@ const CaseStudyCard = ({
           />
         </div>
         <div className="mt-4">
-          <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+          <div className="uppercase tracking-wide text-sm text-white font-semibold">
             {company}
           </div>
-          <h3 className="block mt-1 text-lg leading-tight font-medium text-black">
+          <h3 className="block mt-1 text-lg leading-tight font-medium text-white">
             {title}
           </h3>
-          <p className="mt-2 text-gray-500">
+          <p className="mt-2 text-white">
             {truncateDescription(description, 120)}
-            <span onClick={openModal} className="text-blue-500 cursor-pointer">
+            <span onClick={openModal} className="text-primary-blue cursor-pointer">
               read more
             </span>
           </p>
           <div className="flex items-center mt-4">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 text-white">
               <UserAvatar size={24} />
             </div>
             <div className="ml-3">
-              <p className="text-sm font-medium text-gray-900">{authorName}</p>
-              <p className="text-sm text-gray-500">{authorPosition}</p>
+              <p className="text-sm font-medium text-white">{authorName}</p>
+              <p className="text-sm text-white">{authorPosition}</p>
             </div>
           </div>
-          <span onClick={openModal} className="text-pink-600 mt-4 block cursor-pointer">
+          <span onClick={openModal} className="text-primary-orange mt-4 block cursor-pointer">
             Read more →
           </span>
         </div>

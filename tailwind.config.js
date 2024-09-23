@@ -28,6 +28,20 @@ module.exports = {
         barlow: ['Barlow', 'sans-serif'],
       },
     },
+    keyframes: {
+        slideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { opacity: '1', transform: 'translateY(0)' },
+          '100%': { opacity: '0', transform: 'translateY(-20px)' },
+        },
+      },
+      animation: {
+        slideDown: 'slideDown 0.3s ease-out forwards',
+        slideUp: 'slideUp 0.3s ease-out forwards',
+      },
   },
   plugins: [],
 }

@@ -5,7 +5,7 @@ import CaseStudiesList from "../../components/CaseStudyCard/caseStudyList";
 const CaseStudyPage = () => {
     return(
         <>
-        <div className="bg-gradient-to-r from-white via-purple-50 to-white">
+        <div className="bg-[#1C1C1C]">
          <CaseStudiesHeader />
          <CaseStudiesList />
          </div>
