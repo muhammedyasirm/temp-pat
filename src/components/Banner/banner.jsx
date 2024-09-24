@@ -14,7 +14,7 @@ const Banner = () => {
         <img
           src="/headerLogo.png"
           alt="Banner Logo"
-          className="w-[30%] object-contain pt-4 z-10 xl-down:hidden object-bottom"
+          className="w-[33%] object-contain pt-4 z-10 xl-down:hidden object-bottom"
         />
 
       <div className=" pr-16 xl-down:p-5 flex flex-col w-[50%] xl-down:w-full text-left justify-center z-10">

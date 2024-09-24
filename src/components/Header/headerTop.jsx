@@ -1,9 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import CompactHeader from "./compactHeader";
+import Sidebar from "./sideBar";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [activeMenu, setActiveMenu] = useState({ main: "", sub: "" });
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleNavSidebar = () => {
+    setSidebarVisible(!sidebarVisible);
+  };
 
   const navItems = [
     { name: "HOME", to: "/" },
@@ -15,29 +23,31 @@ const Header = () => {
   ];
 
   const serviceSubItems = [
-    {
-      category: [
-        { name: "RA MATURITY ASSESMENT", to: "/service1" },
-        { name: "REVENUE ASSURANCE MS", to: "/service2" },
-        { name: "FINANCIAL IMPROVEMENT", to: "/service3" },
-      ],
-      border: "border-primary-orange",
-    },
-    {
-      category: [
-        { name: "CARRIER SERVICES", to: "/service4" },
-        { name: "FRAUD MANAGEMENT", to: "/service5" },
-        { name: "ASSET MANAGEMENT", to: "/service6" },
-      ],
-      border: "border-primary-green",
-    },
-    {
-      category: [
-        { name: "PAYMENT SOLUTIONS", to: "/service7" },
-      ],
-      border: "border-primary-blue",
-    },
-  ];
+  {
+    category: [
+      { name: "RA MATURITY ASSESMENT", to: "/service/ra-maturity-assesment" },
+      { name: "REVENUE ASSURANCE MS", to: "/service/revenue-assurance-ms" },
+      { name: "FINANCIAL IMPROVEMENT", to: "/service/financial-improvement" },
+    ],
+    border: "border-primary-orange",
+  },
+  {
+    category: [
+      { name: "CARRIER SERVICES", to: "/service/carrier-services" },
+      { name: "FRAUD MANAGEMENT", to: "/service/fraud-management" },
+      { name: "ASSET MANAGEMENT", to: "/service/asset-management" },
+    ],
+    border: "border-primary-green",
+  },
+  {
+    category: [
+      { name: "PAYMENT SOLUTIONS", to: "/service/payment-solutions" },
+      { name: "CYBER SECURITY", to: "/service/cyber-security" },
+    ],
+    border: "border-primary-blue",
+  },
+];
+
 
   const handleMouseEnter = () => {
     setShowDropdown(true);
@@ -45,6 +55,11 @@ const Header = () => {
 
   const handleMouseLeave = () => {
     setShowDropdown(false);
+  };
+
+  const handleMenuClick = (mainMenu, subMenu = "", path = "/") => {
+    setActiveMenu({ main: mainMenu, sub: subMenu });
+    navigate(path);
   };
 
   return (
@@ -65,40 +80,49 @@ const Header = () => {
               {navItems.map((item, index) => (
                 <li key={index} className="relative group">
                   {item.name === "SERVICES" ? (
-                    // Wrap the SERVICES item and dropdown in a container to handle the hover state
                     <div
                       className="relative"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                     >
-                      <Link
-                        to={item.to}
-                        className="hover:text-primary-orange flex items-center"
+                      <span
+                        onClick={() => handleMenuClick("SERVICES", "", "/service")}
+                        className={`flex items-center cursor-pointer ${
+                          activeMenu.main === "SERVICES"
+                            ? "text-primary-orange"
+                            : "hover:text-primary-orange"
+                        }`}
                       >
                         {item.name}
                         <span className="ml-1">▾</span>
-                      </Link>
+                      </span>
 
                       {showDropdown && (
                         <div
-                          className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-3 gap-8 w-[800px] max-w-[800px] ${
-                        showDropdown ? 'block animate-slideDown' : 'hidden animate-slideUp'
-                      }`}
-
+                          className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-3 gap-8 w-[800px] max-w-[800px]`}
                         >
                           {serviceSubItems.map((subCategory, subIndex) => (
                             <ul
                               key={subIndex}
-                              className={`border-l-2 pl-4 ${subCategory.border}`}
+                              className={`border-l-2 cursor-pointer pl-4 ${subCategory.border}`}
                             >
                               {subCategory.category.map((subItem, itemIndex) => (
                                 <li
                                   key={itemIndex}
-                                  className="py-4 px-2 hover:bg-gray-800"
+                                  className={`py-4 px-2 ${
+                                    activeMenu.sub === subItem.name
+                                      ? "text-primary-orange"
+                                      : "hover:text-primary-orange"
+                                  }`}
+                                  onClick={() =>
+                                    handleMenuClick(
+                                      "SERVICES",
+                                      subItem.name,
+                                      subItem.to
+                                    )
+                                  }
                                 >
-                                  <Link to={subItem.to} className="text-sm">
-                                    {subItem.name}
-                                  </Link>
+                                  {subItem.name}
                                 </li>
                               ))}
                             </ul>
@@ -107,12 +131,16 @@ const Header = () => {
                       )}
                     </div>
                   ) : (
-                    <Link
-                      to={item.to}
-                      className="hover:text-primary-orange flex items-center"
+                    <span
+                      onClick={() => handleMenuClick(item.name, "", item.to)}
+                      className={`flex items-center cursor-pointer ${
+                        activeMenu.main === item.name
+                          ? "text-primary-orange"
+                          : "hover:text-primary-orange"
+                      }`}
                     >
                       {item.name}
-                    </Link>
+                    </span>
                   )}
                 </li>
               ))}
@@ -130,8 +158,17 @@ const Header = () => {
       </header>
 
       <div className="hidden lg-down:block">
-        <CompactHeader />
+        <CompactHeader toggleNavSidebar={toggleNavSidebar} />
       </div>
+
+      <Sidebar
+        navItems={navItems}
+        serviceSubItems={serviceSubItems}
+        activeMenu={activeMenu}
+        handleMenuClick={handleMenuClick}
+        toggleNavSidebar={toggleNavSidebar}
+        sidebarVisible={sidebarVisible}
+      />
     </>
   );
 };

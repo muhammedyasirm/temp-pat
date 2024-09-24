@@ -49,7 +49,7 @@ const caseStudies = [
     quote: '“The new workflow automation system has transformed our order processing, making it faster and more reliable.”',
     authorName: 'Jane Smith',
     authorPosition: 'Workflow Automation Engineer',
-    borderColor: 'border-primary-green',
+    borderColor: 'border-primary-orange',
   },
   {
     image: '/chart3.png',
@@ -62,7 +62,7 @@ const caseStudies = [
     quote: '“The optimized cloud infrastructure has enabled us to cut costs significantly while maintaining high performance and scalability.”',
     authorName: 'Emily Clark',
     authorPosition: 'Cloud Infrastructure Specialist',
-    borderColor: 'border-primary-blue',
+    borderColor: 'border-primary-green',
   },
   {
     image: '/chart1.png',
@@ -75,7 +75,7 @@ const caseStudies = [
     quote: '“AI-powered chatbots have revolutionized our customer support, drastically reducing response times and improving satisfaction.”',
     authorName: 'Michael Turner',
     authorPosition: 'AI Solutions Architect',
-    borderColor: 'border-primary-orange',
+    borderColor: 'border-primary-blue',
   },
 ];
 
