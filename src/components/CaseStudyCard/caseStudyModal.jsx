@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const CaseStudyModal = ({
   isOpen,
@@ -12,11 +12,35 @@ const CaseStudyModal = ({
   quote,
   author,
 }) => {
+  // Create a ref for the modal content
+  const modalRef = useRef(null);
+
+  // Handle click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        onClose();
+      }
+    };
+
+    // Add event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
+
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-      <div className="relative w-full max-w-4xl bg-white rounded-lg shadow-lg max-h-screen overflow-y-auto no-scrollbar">
+      {/* Attach the ref to the modal content */}
+      <div
+        ref={modalRef}
+        className="relative w-full max-w-4xl bg-white rounded-lg shadow-lg max-h-screen overflow-y-auto no-scrollbar"
+      >
         <div className="p-8 bg-black md-down:p-1">
           <h2 className="text-2xl font-bold mb-4 text-white md-down:flex md-down:justify-center md-down:mt-4">
             Case Study Details
@@ -31,12 +55,10 @@ const CaseStudyModal = ({
               <div className="flex flex-wrap justify-center gap-12 mt-10">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <p className="text-4xl font-bold" style={{ color: stat.color }}> 
+                    <p className="text-4xl font-bold" style={{ color: stat.color }}>
                       {stat.value}
                     </p>
-                    <p style={{ color: stat.color }}>
-                      {stat.label}
-                    </p>
+                    <p style={{ color: stat.color }}>{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -63,13 +85,15 @@ const CaseStudyModal = ({
                   </p>
                 </div>
                 <div className="mt-2 text-gray-700">
-                    <h3 className="text-xl font-semibold mt-4">The Solution</h3>
-                    <p className="text-gray-700 mt-2">{solution}</p>
+                  <h3 className="text-xl font-semibold mt-4">The Solution</h3>
+                  <p className="text-gray-700 mt-2">{solution}</p>
                 </div>
               </div>
               <div className="md:col-span-2">
-                <h3 className="text-xl font-semibold mt-4 flex justify-center md-down:justify-start">The Outcome</h3>
-                    <p className="text-gray-700 mt-2">{outcome}</p>
+                <h3 className="text-xl font-semibold mt-4 flex justify-center md-down:justify-start">
+                  The Outcome
+                </h3>
+                <p className="text-gray-700 mt-2">{outcome}</p>
               </div>
             </div>
             <div className="flex justify-end mt-4 p-8">
@@ -88,6 +112,3 @@ const CaseStudyModal = ({
 };
 
 export default CaseStudyModal;
-
-
-

@@ -36,7 +36,6 @@ const TestimonialsSection = () => {
       }}
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:min-h-[30rem]">
-        {/* Left Side (Case Study and Intro Section) */}
         <div className="flex flex-col justify-between w-full lg:w-2/5">
           <div>
             <h2 className="text-5xl lg-down:text-4xl font-bold mb-4 font-barlow">TESTIMONIALS</h2>
@@ -52,7 +51,6 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* Right Side (Testimonials Section with wider cards) */}
         <div className="grid grid-cols-2 lg-down:grid-cols-1 gap-8 w-full lg:w-3/5 h-full">
           {testimonials.map((testimonial, index) => (
             <div

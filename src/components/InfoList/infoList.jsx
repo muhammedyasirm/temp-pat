@@ -4,15 +4,15 @@ const InfoList = () => {
   const infoItems = [
     {
       icon: "/orange-cube.png",
-      text: "Our team consists of seasoned professionals with extensive experience in RAFM. We proudly adhere to TM Forum and GSMA standards, collaborating with top telecoms like INWI, C&W, Lebara, MTN, and ATOM.",
+      text: "Companies using advanced fraud detection systems report a 30-50% reduction in fraud losses",
     },
     {
       icon: "/green-cube.png",
-      text: "We offer specialized services that protect and boost your revenue streams. Whether it's RA Maturity, Managed Services, or Fraud Management, we have you covered.",
+      text: "Companies with high maturity levels in risk management have 40% fewer incidents of project failures compared to those with low maturity.",
     },
     {
       icon: "/blue-cube.png",
-      text: "Our targeted projects focus on critical financial areas like deferred revenue and margin analysis to improve your company's bottom line.",
+      text: "Telecom companies can lose up to 5% of their revenue annually due to billing and operational inefficiencies.",
     },
   ];
 

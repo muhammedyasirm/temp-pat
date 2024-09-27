@@ -23,31 +23,30 @@ const Header = () => {
   ];
 
   const serviceSubItems = [
-  {
-    category: [
-      { name: "RA MATURITY ASSESMENT", to: "/service/ra-maturity-assesment" },
-      { name: "REVENUE ASSURANCE MS", to: "/service/revenue-assurance-ms" },
-      { name: "FINANCIAL IMPROVEMENT", to: "/service/financial-improvement" },
-    ],
-    border: "border-primary-orange",
-  },
-  {
-    category: [
-      { name: "CARRIER SERVICES", to: "/service/carrier-services" },
-      { name: "FRAUD MANAGEMENT", to: "/service/fraud-management" },
-      { name: "ASSET MANAGEMENT", to: "/service/asset-management" },
-    ],
-    border: "border-primary-green",
-  },
-  {
-    category: [
-      { name: "PAYMENT SOLUTIONS", to: "/service/payment-solutions" },
-      { name: "CYBER SECURITY", to: "/service/cyber-security" },
-    ],
-    border: "border-primary-blue",
-  },
-];
-
+    {
+      category: [
+        { name: "RA MATURITY ASSESMENT", to: "/service/ra-maturity-assesment" },
+        { name: "REVENUE ASSURANCE MS", to: "/service/revenue-assurance-ms" },
+        { name: "FINANCIAL IMPROVEMENT", to: "/service/financial-improvement" },
+      ],
+      border: "border-primary-orange",
+    },
+    {
+      category: [
+        { name: "CARRIER SERVICES", to: "/service/carrier-services" },
+        { name: "FRAUD MANAGEMENT", to: "/service/fraud-management" },
+        { name: "ASSET MANAGEMENT", to: "/service/asset-management" },
+      ],
+      border: "border-primary-green",
+    },
+    {
+      category: [
+        { name: "PAYMENT SOLUTIONS", to: "/service/payment-solutions" },
+        { name: "CYBER SECURITY", to: "/service/cyber-security" },
+      ],
+      border: "border-primary-blue",
+    },
+  ];
 
   const handleMouseEnter = () => {
     setShowDropdown(true);
@@ -57,9 +56,11 @@ const Header = () => {
     setShowDropdown(false);
   };
 
-  const handleMenuClick = (mainMenu, subMenu = "", path = "/") => {
+  const handleMenuClick = (mainMenu, subMenu = "", path = "") => {
     setActiveMenu({ main: mainMenu, sub: subMenu });
-    navigate(path);
+    if (path) {
+      navigate(path);
+    }
   };
 
   return (
@@ -86,7 +87,6 @@ const Header = () => {
                       onMouseLeave={handleMouseLeave}
                     >
                       <span
-                        onClick={() => handleMenuClick("SERVICES", "", "/service")}
                         className={`flex items-center cursor-pointer ${
                           activeMenu.main === "SERVICES"
                             ? "text-primary-orange"

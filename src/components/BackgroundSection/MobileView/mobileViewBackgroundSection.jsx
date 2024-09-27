@@ -1,37 +1,6 @@
 import React from 'react';
 
-const ResponsiveSectionedBackground = () => {
-  const sections = [
-    {
-      id: 1,
-      title: 'Client Learning Programs',
-      description: '01',
-      fullDescription: 'Accelerate your learning and development through our tailored programs capabilities that.',
-      backgroundImage: 'https://wpdemo.archiwp.com/maxbizz/wp-content/uploads/sites/7/2020/10/fservice-3.jpg',
-    },
-    {
-      id: 2,
-      title: 'Partnership Ecosystem',
-      description: '02',
-      fullDescription: 'Accelerate your innovation and transformation with a fully integrated suite of capabilities that.',
-      backgroundImage: 'https://wpdemo.archiwp.com/maxbizz/wp-content/uploads/sites/7/2020/09/fservice1.jpg',
-    },
-    {
-      id: 3,
-      title: 'New Business Innovation',
-      description: '03',
-      fullDescription: 'Explore innovative solutions to transform your business operations and growth strategies.',
-      backgroundImage: 'https://wpdemo.archiwp.com/maxbizz/wp-content/uploads/sites/7/2020/09/fservice2.jpg',
-    },
-    {
-      id: 4,
-      title: 'Digital Delivery Platform',
-      description: '04',
-      fullDescription: 'Leverage our digital platform to enhance your business delivery and customer satisfaction.',
-      backgroundImage: 'https://wpdemo.archiwp.com/maxbizz/wp-content/uploads/sites/7/2020/10/fservice-3.jpg',
-    },
-  ];
-
+const ResponsiveSectionedBackground = ({ sections }) => {
   return (
     <div>
       {sections.map((section) => (

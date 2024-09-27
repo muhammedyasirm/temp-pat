@@ -1,26 +1,25 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';  // Use useParams hook
-import CommonBanner from "../../components/CommonBanner/commonBanner";
+import { useParams } from 'react-router-dom';
+// import CommonBanner from "../../components/CommonBanner/commonBanner";
 import { serviceContent } from '../../components/ServicePageLayout/serviceContent';
+import ServiceInfoCard from '../../components/ServiceInfo/serviceInfoCard';
+import FeedbackSection from '../../components/ServiceFeedBack/serviceFeedbackSection';
+import ServiceBanner from '../../components/ServiceBanner/serviceBanner';
 
 const ServicePage = () => {
-  const { serviceId } = useParams();  // Destructure serviceId from useParams
+  const { serviceId } = useParams();
 
-  // Find the content for the specific service page
   const serviceData = serviceContent[serviceId];
 
-  // If no content is found for the service, show a default message
   if (!serviceData) {
     return <p>Service not found</p>;
   }
 
   return (
     <>
-      <CommonBanner
-        imageSrc={serviceData.imageSrc} // Use the dynamic image source
-        title={serviceData.title}
-        subtitle={serviceData.subtitle}
-      />
+      <ServiceBanner title={serviceData.title} subtitle={serviceData.subtitle} />
+      <ServiceInfoCard subCategories={serviceData.subCategoriesWithIcon}/>
+      <FeedbackSection />
       <div className="service-description">
         <h2>{serviceData.title}</h2>
         <p>{serviceData.description}</p>

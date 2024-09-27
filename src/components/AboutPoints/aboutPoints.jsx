@@ -5,7 +5,7 @@ const ProfitAssurance = () => {
   return (
     <div className="bg-black text-white py-16 px-24 md-down:px-6 relative">
       <div className="absolute top-0 left-[25%] w-[50%] h-1 flex bg-primary-green"></div>
-      <div className="flex gap-28 justify-center lg-down:flex-col">
+      <div className="flex gap-28 lg-down:gap-12 justify-center lg-down:flex-col">
         <div className="flex flex-col w-[40%] lg-down:w-full">
           <div className="text-left mb-12 mt-4">
             <img
@@ -20,11 +20,11 @@ const ProfitAssurance = () => {
               <span className="text-primary-green font-bold">since 2014</span>,
             </h3>
             <p className="text-lg md-down:text-lg leading-relaxed font-montserrat">
-              based in Dubai, we are a trusted partner for revenue protection
-              and optimization. With a proven track record across Africa and
-              Asia, we help telecom operators safeguard their revenue streams
-              and enhance profitability through innovative services and tailored
-              solutions.
+              Our strategies ensure that every dollar earned is accurately captured, 
+              optimizing your financial performance by stopping revenue leakages. With 
+              advanced fraud detection solutions to safeguard and protect your revenue by
+              identifying and mitigating potential scams. With a diverse and expert team to
+              ensure your revenue growth.
             </p>
           </div>
         </div>
