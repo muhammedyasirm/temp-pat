@@ -2,16 +2,29 @@ export const serviceContent = {
   "ra-maturity-assesment": {
     title: "Maturity Assessment",
     subtitle: "Assess the maturity of your RA processes",
+    primaryColor: "#386B32",
+    secondaryColor: "#344526",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
-        categoryTitle: "Category 1",
+        categoryTitle: "Technology",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-1"
+        icon: "/technology.svg"
       },
       {
-        categoryTitle: "Category 2",
+        categoryTitle: "Organization",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
+        icon: "/organization.svg"
+      },
+      {
+        categoryTitle: "Processes",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/processes.svg"
+      },
+      {
+        categoryTitle: "Measurement And Reporting",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/measurement-and-requirement.svg"
       }
     ],
     feedBack: "Detailed information about RA Maturity Assessment...",
@@ -21,7 +34,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '65545'
+        number: '545'
       },
       {
         description: "Second point to be here",
@@ -29,25 +42,47 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '65545.98'
+        number: '45.98'
       }
     ],
-    graph: "graph-image-path",
   },
   "revenue-assurance-ms": {
     title: "Revenue Assurance",
     subtitle: "Ensure revenue integrity across your systems",
+    primaryColor: "#1B6D7E",
+    secondaryColor: "#0E8D8E",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
-        categoryTitle: "Category 1",
+        categoryTitle: "Rating & Billing",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-1"
+        icon: "/rating-and-billing.svg"
       },
       {
-        categoryTitle: "Category 2",
+        categoryTitle: "Network & Usage Management",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
-      }
+        icon: "/network-and-usage-management.svg"
+      },
+      {
+        categoryTitle: "Finance & Accounting",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/finance-and-accounting.svg"
+      },
+      {
+        categoryTitle: "Product & Offers Management",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/product-and-offers-management.svg"
+      },
+      {
+        categoryTitle: "Customer Management",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/customer-management.svg"
+      },
+      {
+        categoryTitle: "Partner Management",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/partner-management.svg"
+      },
     ],
     feedBack: "Detailed information about Revenue Assurance MS...",
     feedBackAuthor: "Jane Doe",
@@ -56,7 +91,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '12345'
+        number: '345'
       },
       {
         description: "Second point to be here",
@@ -64,14 +99,16 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '54321.78'
+        number: '21.78'
       }
     ],
-    graph: "graph-image-path",
   },
   "financial-improvement": {
     title: "Financial Improvement",
     subtitle: "Improve your financial processes efficiently",
+    primaryColor: "green",
+    secondaryColor: "yellow",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Category 1",
@@ -91,7 +128,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '34567'
+        number: '367'
       },
       {
         description: "Second point to be here",
@@ -99,19 +136,21 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '67890.12'
+        number: '90.12'
       }
     ],
-    graph: "graph-image-path",
   },
   "carrier-services": {
     title: "Carrier Services",
     subtitle: "Optimize carrier service efficiency",
+    primaryColor: "green",
+    secondaryColor: "yellow",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Category 1",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-1"
+        icon: "/measurement-and-requirement.svg"
       },
       {
         categoryTitle: "Category 2",
@@ -136,7 +175,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '98765'
+        number: '765'
       },
       {
         description: "Second point to be here",
@@ -144,25 +183,42 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '12345.67'
+        number: '45.67'
       }
     ],
-    graph: "graph-image-path",
   },
   "fraud-management": {
-    title: "Fraud Management",
+    title: "Fraud Detection",
     subtitle: "Secure your assets against fraud",
+    primaryColor: "#873B27",
+    secondaryColor: "#512C21",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
-        categoryTitle: "Category 1",
+        categoryTitle: "Commision Assurance",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-1"
+        icon: "/comission-assurance.svg"
       },
       {
-        categoryTitle: "Category 2",
+        categoryTitle: "Wangiri",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
-      }
+        icon: "/wangiri.svg"
+      },
+      {
+        categoryTitle: "IRSF",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/irsf.svg"
+      },
+      {
+        categoryTitle: "Dealer Fraud",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/dealer-fraud.svg"
+      },
+      {
+        categoryTitle: "Grey Route Detection",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "/grey-route-detection.svg"
+      },
     ],
     feedBack: "Detailed information about Fraud Management...",
     feedBackAuthor: "Sarah Lee",
@@ -171,7 +227,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '45678'
+        number: '678'
       },
       {
         description: "Second point to be here",
@@ -179,14 +235,16 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '87654.32'
+        number: '54.32'
       }
     ],
-    graph: "graph-image-path",
   },
   "asset-management": {
     title: "Asset Management",
     subtitle: "Manage assets effectively",
+    primaryColor: "green",
+    secondaryColor: "yellow",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Category 1",
@@ -206,7 +264,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '112233'
+        number: '233'
       },
       {
         description: "Second point to be here",
@@ -214,14 +272,16 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '99887.76'
+        number: '87.76'
       }
     ],
-    graph: "graph-image-path",
   },
   "payment-solutions": {
     title: "Payment Solutions",
     subtitle: "Streamline payment processes",
+    primaryColor: "green",
+    secondaryColor: "yellow",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Category 1",
@@ -241,7 +301,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '223344'
+        number: '344'
       },
       {
         description: "Second point to be here",
@@ -249,14 +309,16 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '667788.99'
+        number: '88.99'
       }
     ],
-    graph: "graph-image-path",
   },
   "cyber-security": {
     title: "Cyber Security",
     subtitle: "Protect your data and privacy",
+    primaryColor: "green",
+    secondaryColor: "yellow",
+    graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Category 1",
@@ -276,7 +338,7 @@ export const serviceContent = {
     cubePoints: [
       {
         description: "First point to be here",
-        number: '998877'
+        number: '877'
       },
       {
         description: "Second point to be here",
@@ -284,9 +346,8 @@ export const serviceContent = {
       },
       {
         description: "Third point to be here",
-        number: '445566.44'
+        number: '66.44'
       }
     ],
-    graph: "graph-image-path",
   },
 };

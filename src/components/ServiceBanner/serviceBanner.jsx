@@ -1,10 +1,12 @@
 import React from "react";
 
-const ServiceBanner = ({ title, subtitle }) => {
+const ServiceBanner = ({ title, subtitle, primaryColor, secondaryColor }) => {
   return (
     <div className="w-full">
       <div className="flex flex-col lg:flex-row">
-        <div className="relative w-full lg:w-[50%] p-36 bg-[#1B6D7E] flex justify-center items-center">
+        <div className="relative w-full lg:w-[50%] p-36 flex justify-center items-center py-40"
+          style={{ backgroundColor: primaryColor }}
+        >
           <div className="flex flex-col text-center lg:text-left">
             <h2 className="text-white text-5xl lg:text-8xl font-barlow font-bold">
               {title}
@@ -21,7 +23,16 @@ const ServiceBanner = ({ title, subtitle }) => {
             <polygon fill="black" points="0,50 100,100 0,100" />
           </svg>
         </div>
-        <div className="relative w-full lg:w-[50%] bg-[#0E8D8E]">
+        <div className="relative w-full lg:w-[50%]"
+          style={{ 
+            backgroundColor: secondaryColor,
+            backgroundImage: `url('/analytics-bg.png')`,
+            backgroundSize: ' 100% 90%',
+            backgroundPosition: 'right bottom',
+            backgroundRepeat: 'no-repeat',
+            backgroundBlendMode: 'overlay',
+          }}
+        >
           <svg
             className="absolute bottom-0 right-0 w-full h-36"
             viewBox="0 0 100 100"

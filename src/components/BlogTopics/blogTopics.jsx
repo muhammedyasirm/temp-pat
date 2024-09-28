@@ -12,7 +12,7 @@ const BlogTopics = () => {
   };
 
   return (
-    <div className="relative w-full bg-black text-white px-14">
+    <div className="relative w-full bg-black text-white px-14 md-down:px-4">
       <div className="absolute inset-0 flex justify-end md-down:hidden">
         <img
           src="/analytics-bg.png"

@@ -19,6 +19,8 @@ const ServicePage = () => {
       <ServiceBanner
         title={serviceData.title}
         subtitle={serviceData.subtitle}
+        primaryColor={serviceData.primaryColor}
+        secondaryColor={serviceData.secondaryColor}
       />
       <ServiceInfoCard subCategories={serviceData.subCategoriesWithIcon} />
       <FeedbackSection
@@ -27,6 +29,7 @@ const ServicePage = () => {
         authorCompany={serviceData.authorCompany}
         authorImage={serviceData.authorImage}
         cubePoints={serviceData.cubePoints}
+        graph={serviceData.graph}
       />
     </>
   );

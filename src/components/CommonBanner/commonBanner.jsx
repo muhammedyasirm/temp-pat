@@ -2,7 +2,7 @@ import React from "react";
 
 const CommonBanner = ({ imageSrc, title, subtitle }) => {
   return (
-    <div className="relative w-full h-[80vh] md-down:h-[60vh] overflow-hidden">
+    <div className="relative w-full h-[80vh overflow-hidden">
       <img
         src={imageSrc}
         alt="Banner"
