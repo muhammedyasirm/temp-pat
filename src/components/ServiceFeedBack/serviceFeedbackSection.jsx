@@ -14,39 +14,43 @@ const StatItem = ({ icon, text, value }) => {
   );
 };
 
-const FeedbackSection = () => {
+const FeedbackSection = ({
+  feedBack,
+  feedBackAuthor,
+  authorCompany,
+  authorImage,
+  cubePoints,
+}) => {
   return (
     <div className="bg-gray-900 p-8 px-40">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
         <div className="space-y-16 col-span-2">
-          <StatItem
-            icon={<img src="/blue-cube.png" alt="Cube"></img>}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
-            value="78%"
-          />
-          <StatItem
-            icon={<img src="/blue-cube.png" alt="Cube"></img>}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
-            value="1,392"
-          />
-          <StatItem
-            icon={<img src="/blue-cube.png" alt="Cube"></img>}
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed"
-            value="9.26"
-          />
+          {cubePoints.map((point, index) => (
+            <StatItem
+              key={index}
+              icon={<img src="/blue-cube.png" alt="Cube" />}
+              text={point.description}
+              value={point.number}
+            />
+          ))}
         </div>
-
-        <div className=" rounded-lg">
+        <div className="rounded-lg">
           <h3 className="text-white text-xl font-bold mb-4">
             Don't just take our word for it! Check our latest feedback.
           </h3>
           <div className="bg-gray-800 rounded-md p-6">
-            <div className="flex items-center justify-center mb-4">
-            <div className="w-16 h-16 bg-white rounded-full"></div>
-          </div>
-          <p className="text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-          </p>
+            <div className="flex items-center justify-start gap-2 mb-4">
+              <img
+                src={authorImage}
+                alt={feedBackAuthor}
+                className="w-16 h-16 bg-white rounded-full"
+              />
+              <div className="flex flex-col">
+                <p className="text-gray-400 font-semibold">{feedBackAuthor}</p>
+                <p className="text-gray-400">{authorCompany}</p>
+              </div>
+            </div>
+            <p className="text-gray-300 mb-2">{feedBack}</p>
           </div>
         </div>
       </div>

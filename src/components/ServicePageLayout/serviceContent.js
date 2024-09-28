@@ -117,7 +117,17 @@ export const serviceContent = {
         categoryTitle: "Category 2",
         description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
         icon: "icon-path-2"
-      }
+      },
+      {
+        categoryTitle: "Category 2",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "icon-path-2"
+      },
+      {
+        categoryTitle: "Category 2",
+        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        icon: "icon-path-2"
+      },
     ],
     feedBack: "Detailed information about Carrier Services...",
     feedBackAuthor: "Michael Johnson",

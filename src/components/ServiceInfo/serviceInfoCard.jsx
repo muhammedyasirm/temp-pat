@@ -1,52 +1,32 @@
 import React, { useEffect } from "react";
 
-const InfoCard = ({ title, description }) => {
+const InfoCard = ({ title, description, icon }) => {
   return (
-    <div className="bg-[#232323] bg-opacity-[80%] text-white p-6 md-down:p-3 rounded-md shadow-lg text-center flex flex-col justify-center">
-      <h3 className="text-3xl font-bold flex justify-center items-center mb-2 min-h-20 md-down:min-h-0 text-center">{title}</h3>
+    <div className="bg-[#232323] bg-opacity-[80%] text-white p-6 md-down:p-3 rounded-md shadow-lg flex flex-col items-center justify-center text-center h-full min-h-[300px]">
+      <img src={icon} alt={`${title} icon`} className="w-16 h-16 mb-4" /> {/* Icon */}
+      <h3 className="text-3xl font-bold mb-2">{title}</h3>
       <p className="text-xl">{description}</p>
     </div>
   );
 };
 
-const ServiceInfoCard = ({subCategories}) => {
+const ServiceInfoCard = ({ subCategories }) => {
   useEffect(() => {
-    console.log("SubCategories => ",subCategories);
-  }, [subCategories])
-  
-  const cardData = [
-    {
-      title: "RATING & BILLING",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    },
-    {
-      title: "NETWORK & USAGE MANAGEMENT",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    },
-    {
-      title: "FINANCE & ACCOUNTING",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    },
-    {
-      title: "PRODUCT & OFFERS MANAGEMENT",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    },
-    {
-      title: "CUSTOMER MANAGEMENT",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    },
-    {
-      title: "PARTNER MANAGEMENT",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-    },
-  ];
+    console.log("SubCategories => ", subCategories);
+  }, [subCategories]);
 
   return (
     <div className="bg-black py-10">
       <div className="container mx-auto px-4 md-down:px-0">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cardData.map((card, index) => (
-            <InfoCard key={index} title={card.title} description={card.description} />
+        <div className="flex flex-wrap justify-center gap-8">
+          {subCategories.map((category, index) => (
+            <div key={index} className="w-full lg:w-2/5 xl:w-1/4 flex justify-center">
+              <InfoCard
+                title={category.categoryTitle}
+                description={category.description}
+                icon={category.icon}
+              />
+            </div>
           ))}
         </div>
       </div>
