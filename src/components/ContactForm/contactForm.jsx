@@ -33,7 +33,7 @@ const ContactForm = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          setIsSubmitted(true); // Show dialog box on successful submission
+          setIsSubmitted(true);
         },
         (err) => {
           console.error("FAILED...", err);
@@ -42,12 +42,12 @@ const ContactForm = () => {
   };
 
   const handleCloseDialog = () => {
-    setIsSubmitted(false); // Close dialog box
+    setIsSubmitted(false);
     setFormData({
       name: "",
       email: "",
       phone: "",
-      message: "", // Reset form fields to empty
+      message: "",
     });
   };
 
@@ -145,8 +145,9 @@ const ContactForm = () => {
             <span>Diera - Garhoud Office 305 - Al Durrah 4 SBK</span>
           </div>
           <p className="mt-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, mpor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum
+          Reach out to us for more information about how we can help optimize your revenue assurance 
+          and fraud management processes. Our team is ready to assist you with personalized solutions 
+          to meet your business needs.
           </p>
         </div>
       </div>

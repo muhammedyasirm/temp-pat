@@ -189,34 +189,34 @@ export const serviceContent = {
   },
   "fraud-management": {
     title: "Fraud Detection",
-    subtitle: "Secure your assets against fraud",
+    subtitle: "Our Fraud Management Services focus on key areas such as commission assurance, Wangiri fraud, IRSF, dealer fraud, and grey route detection. We provide thorough evaluations and implement advanced solutions to safeguard your business from potential fraud risks and revenue loss.",
     primaryColor: "#873B27",
     secondaryColor: "#512C21",
     graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Commision Assurance",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        description: "Ensure accurate commission payments and prevent overpayment through regular assessments and automated monitoring of commission systems.",
         icon: "/comission-assurance.svg"
       },
       {
         categoryTitle: "Wangiri",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        description: "Protect your business from Wangiri fraud by identifying suspicious one-ring calls and implementing automated measures to prevent revenue loss.",
         icon: "/wangiri.svg"
       },
       {
         categoryTitle: "IRSF",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        description: "Detect and mitigate International Revenue Share Fraud (IRSF) through real-time monitoring and advanced fraud detection techniques.",
         icon: "/irsf.svg"
       },
       {
         categoryTitle: "Dealer Fraud",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        description: "Identify and manage fraud risks within your dealer network by enforcing compliance and implementing fraud detection solutions.",
         icon: "/dealer-fraud.svg"
       },
       {
         categoryTitle: "Grey Route Detection",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        description: "Eliminate grey route traffic and prevent revenue leakage by identifying unauthorized routing and implementing effective monitoring systems.",
         icon: "/grey-route-detection.svg"
       },
     ],

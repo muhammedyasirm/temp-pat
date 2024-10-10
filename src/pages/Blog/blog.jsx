@@ -10,7 +10,7 @@ const BlogPage = () => {
       <CommonBanner
         imageSrc="/blog-banner.jpg"
         title="WELCOME TO THE BLOG"
-        subtitle="Stay tuned for the latest updates!"
+        subtitle="Welcome to the Profit Assurance Technology blog, your source for insights, tips, and news related to revenue assurance, fraud management, and financial optimization."
       />
       <BlogTopics />
       <ViewMoreSection />

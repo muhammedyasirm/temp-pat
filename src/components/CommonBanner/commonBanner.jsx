@@ -2,7 +2,7 @@ import React from "react";
 
 const CommonBanner = ({ imageSrc, title, subtitle }) => {
   return (
-    <div className="relative w-full h-[80vh overflow-hidden">
+    <div className="relative w-full h-[80vh] overflow-hidden">
       <img
         src={imageSrc}
         alt="Banner"
@@ -21,7 +21,7 @@ const CommonBanner = ({ imageSrc, title, subtitle }) => {
           {title}
         </h1>
         {subtitle && (
-          <h2 className="text-2xl mt-4 text-center">{subtitle}</h2>
+          <h2 className="text-2xl mt-4 text-center max-w-[50%]">{subtitle}</h2>
         )}
       </div>
     </div>

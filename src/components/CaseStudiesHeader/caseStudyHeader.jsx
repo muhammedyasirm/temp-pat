@@ -12,10 +12,10 @@ const CaseStudiesHeader = () => {
         <span>CASE STUDIES</span>
       </div>
       <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-        What Pro Subscribers build with React Flow
+        Success Stories: Financial Growth Solutions
       </h1>
-      <p className="text-white text-lg">
-        See how our users build custom node-based apps like workflow editors and diagramming tools
+      <p className="text-white text-lg ">
+        Discover how we've helped clients overcome challenges and achieve financial growth through tailored solutions. Our case studies showcase real-world results and the impact of our expertise.
       </p>
     </div>
   );

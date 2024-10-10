@@ -51,8 +51,8 @@ const BlogTopics = () => {
               </div>
 
               <p className="text-sm md:text-base max-w-[36rem] relative text-start ml-8 md-down:ml-4  justify-start font-montserrat items-start z-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Implement advanced fraud detection and prevention strategies to safeguard your business from revenue leakage and fraudulent activities. 
+              Our solutions utilize real-time monitoring and predictive analytics to protect your revenue streams.
               </p>
             </div>
           </div>
@@ -77,8 +77,11 @@ const BlogTopics = () => {
                 REVENUE ASSURANCE
               </h3>
               <p className="text-sm relative md:text-base max-w-[36rem] ml-8 md-down:ml-4 z-10 font-montserrat">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ensure accurate billing, efficient network usage, and optimized revenue management with our comprehensive 
+              Revenue Assurance services. We help businesses streamline their operations and maximize profitability by identifying
+              and correcting revenue leakage.
+
+
               </p>
             </div>
           </div>
@@ -107,8 +110,8 @@ const BlogTopics = () => {
               </div>
 
               <p className="text-sm md:text-base max-w-[36rem] ml-8 md-down:ml-4  relative text-start justify-start items-start z-10 font-montserrat">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Evaluate your organization’s readiness for growth with our in-depth Maturity Assessment. We provide actionable insights into your processes, technology, and performance, 
+              helping you enhance efficiency and competitiveness.
               </p>
             </div>
           </div>

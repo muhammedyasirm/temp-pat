@@ -1,15 +1,15 @@
 const caseStudies = [
   {
     image: '/chart1.png',
-    title: 'Automating OneSignal\'s Engagement with React Flow',
-    company: 'OneSignal',
-    description: 'OneSignal is a customer engagement platform that sends over 12 billion messages daily. After finding React Flow and creating an early proof of concept, it became clear that building a custom workflow builder would greatly enhance our engagement efforts. Using React Flow, we streamlined the process of creating, editing, and visualizing complex customer engagement workflows.',
-    challenge: 'OneSignal faced challenges in managing the complexity of customer engagement workflows due to the rapidly growing user base. The existing system was not scalable, making it difficult to customize engagement processes without a significant amount of manual intervention. The challenge was to create a scalable and user-friendly solution to automate workflows, reduce errors, and save time.',
-    solution: 'By leveraging React Flow, we built a dynamic workflow builder that allowed for the easy creation and modification of customer engagement workflows. The visual nature of React Flow made it possible for non-technical users to design and implement workflows without needing in-depth knowledge of the underlying system. We integrated React Flow with our existing backend, providing a seamless experience for users to automate customer journeys efficiently.',
-    outcome: 'The implementation of the workflow builder resulted in a 40% reduction in time spent managing customer engagement processes. Additionally, it reduced manual errors by 30%, leading to more accurate and targeted messaging. User engagement increased by 20%, and the streamlined process allowed for rapid iteration and testing of new engagement strategies.',
-    quote: '“React Flow has allowed us to scale our customer engagement workflows effortlessly, providing a seamless experience for our users and team.”',
+    title: 'Revenue Assurance for a Leading Telecom Operator in Morocco',
+    company: 'INWI (Morocco)',
+    description: 'INWI, a prominent telecom operator in Morocco, was experiencing substantial revenue leakage due to inefficiencies in billing processes and network usage management. After conducting a detailed RA Maturity Assessment, we implemented a tailored Revenue Assurance Managed Service (RAMS) to streamline their operations and improve financial performance.',
+    challenge: 'INWI, a leading telecom operator in Morocco, was facing significant revenue leakage caused by inefficiencies in their billing processes and network usage management. The company struggled with inaccurate billing cycles, leading to lost revenue, and poor visibility into network usage, which further complicated resource optimization. This challenge was negatively impacting their bottom line and customer satisfaction, prompting the need for a comprehensive solution to streamline their operations and ensure revenue integrity.',
+    solution: 'We conducted an extensive Revenue Assurance (RA) Maturity Assessment to identify gaps in their existing processes. After thorough analysis, we implemented a Revenue Assurance Managed Service (RAMS) that was customized to fit INWI’s unique operational structure. This involved improving billing accuracy through better verification systems, streamlining network usage monitoring, and introducing automated controls to ensure data consistency and accuracy. The solution integrated seamlessly with their current infrastructure, allowing for real-time monitoring and proactive issue resolution.',
+    outcome: 'As a result of these initiatives, INWI saw a 30% reduction in revenue leakage, which significantly improved their financial stability. Additionally, billing accuracy increased by 25%, reducing customer complaints and enhancing overall operational efficiency. The enhanced visibility into network usage also enabled better resource allocation, contributing to long-term revenue assurance and business growth. The solution provided INWI with the tools to continue monitoring and optimizing their revenue streams on an ongoing basis.',
+    quote: '“With our new Revenue Assurance system in place, we’ve significantly improved revenue integrity and operational efficiency, providing a better experience for both our team and customers.”',
     authorName: 'Lee Munroe',
-    authorPosition: 'Head of Design at OneSignal',
+    authorPosition: 'Head of Design at INWI',
     borderColor: 'border-primary-orange',
   },
   {
