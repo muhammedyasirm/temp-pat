@@ -4,7 +4,7 @@ import CompactHeader from "./compactHeader";
 import Sidebar from "./sideBar";
 
 const Header = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(""); // Holds the active dropdown menu
   const [activeMenu, setActiveMenu] = useState({ main: "", sub: "" });
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const navigate = useNavigate();
@@ -15,6 +15,7 @@ const Header = () => {
 
   const navItems = [
     { name: "HOME", to: "/" },
+    { name: "SOLUTIONS", to: "/solution" },
     { name: "SERVICES", to: "/service" },
     { name: "CASE STUDY", to: "/case-study" },
     { name: "EVENTS", to: "/events" },
@@ -42,19 +43,28 @@ const Header = () => {
     {
       category: [
         { name: "PAYMENT SOLUTIONS", to: "/service/payment-solutions" },
-        { name: "CYBER SECURITY", to: "/service/cyber-security" },
+        { name: "INFORMATION SECURITY", to: "/service/cyber-security" },
       ],
       border: "border-primary-blue",
     },
   ];
 
-  const handleMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
-  };
+  const solutionSubItems = [
+    {
+      category: [
+        { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution" },
+        { name: "ASSET MANAGEMENT", to: "/solution/asset-management" },
+        { name: "RAFM SOLUTION", to: "/solution/rafm-solution " },
+      ],
+      border: "border-primary-orange",
+    },
+    {
+      category: [
+        { name: "SITES PROFITABILITY", to: "/solution/sites-profitability" },
+      ],
+      border: "border-primary-green",
+    },
+  ];
 
   const handleMenuClick = (mainMenu, subMenu = "", path = "") => {
     setActiveMenu({ main: mainMenu, sub: subMenu });
@@ -83,8 +93,8 @@ const Header = () => {
                   {item.name === "SERVICES" ? (
                     <div
                       className="relative"
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
+                      onMouseEnter={() => setShowDropdown("services")}
+                      onMouseLeave={() => setShowDropdown("")}
                     >
                       <span
                         className={`flex items-center cursor-pointer ${
@@ -97,7 +107,7 @@ const Header = () => {
                         <span className="ml-1">▾</span>
                       </span>
 
-                      {showDropdown && (
+                      {showDropdown === "services" && (
                         <div
                           className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-3 gap-8 w-[800px] max-w-[800px]`}
                         >
@@ -117,6 +127,56 @@ const Header = () => {
                                   onClick={() =>
                                     handleMenuClick(
                                       "SERVICES",
+                                      subItem.name,
+                                      subItem.to
+                                    )
+                                  }
+                                >
+                                  {subItem.name}
+                                </li>
+                              ))}
+                            </ul>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : item.name === "SOLUTIONS" ? (
+                    <div
+                      className="relative"
+                      onMouseEnter={() => setShowDropdown("solutions")}
+                      onMouseLeave={() => setShowDropdown("")}
+                    >
+                      <span
+                        className={`flex items-center cursor-pointer ${
+                          activeMenu.main === "SOLUTIONS"
+                            ? "text-primary-orange"
+                            : "hover:text-primary-orange"
+                        }`}
+                      >
+                        {item.name}
+                        <span className="ml-1">▾</span>
+                      </span>
+
+                      {showDropdown === "solutions" && (
+                        <div
+                          className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-2 gap-8 w-[600px] max-w-[600px]`}
+                        >
+                          {solutionSubItems.map((subCategory, subIndex) => (
+                            <ul
+                              key={subIndex}
+                              className={`border-l-2 cursor-pointer pl-4 ${subCategory.border}`}
+                            >
+                              {subCategory.category.map((subItem, itemIndex) => (
+                                <li
+                                  key={itemIndex}
+                                  className={`py-4 px-2 ${
+                                    activeMenu.sub === subItem.name
+                                      ? "text-primary-orange"
+                                      : "hover:text-primary-orange"
+                                  }`}
+                                  onClick={() =>
+                                    handleMenuClick(
+                                      "SOLUTIONS",
                                       subItem.name,
                                       subItem.to
                                     )

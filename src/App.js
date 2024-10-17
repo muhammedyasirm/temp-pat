@@ -12,6 +12,7 @@ const BlogPage = lazy(() => import("./pages/Blog/blog"));
 const CaseStudyPage = lazy(() => import("./pages/CaseStudy/caseStudy"));
 const EventPage = lazy(() => import("./pages/Event/eventPage"));
 const ServicePage = lazy(() => import("./pages/Service/servicePage"));
+const SolutionPage = lazy(() => import("./pages/Solutions/solutionPage"));
 
 function App() {
   return (
@@ -21,12 +22,14 @@ function App() {
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/service" element={<HomePage />} />
+            {/* <Route path="/service" element={<HomePage />} /> */}
             <Route path="/service/:serviceId" element={<ServicePage />} />
             <Route path="/case-study" element={<CaseStudyPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/events" element={<EventPage />} />
+            {/* <Route path="/solution" element={<SolutionPage />} /> */}
+            <Route path="/solution/:solutionId" element = {<SolutionPage />} />
           </Routes>
         </Suspense>
         <Footer />

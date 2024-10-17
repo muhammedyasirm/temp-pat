@@ -14,7 +14,7 @@ const CaseStudiesHeader = () => {
       <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
         Success Stories: Financial Growth Solutions
       </h1>
-      <p className="text-white text-lg ">
+      <p className="text-white text-lg">
         Discover how we've helped clients overcome challenges and achieve financial growth through tailored solutions. Our case studies showcase real-world results and the impact of our expertise.
       </p>
     </div>
