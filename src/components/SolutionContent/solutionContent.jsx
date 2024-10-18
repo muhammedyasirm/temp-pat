@@ -14,8 +14,8 @@ const SolutionContent = (
   }
 ) => {
   return (
-    <div>
-      <div className="text-center py-8 flex flex-col lg:flex-row items-stretch max-w-[80%] md-down:max-w-full mx-auto">
+    <div className='bg-[#1C1C1C]'>
+      <div className="text-center py-8 flex flex-col lg:flex-row items-stretch max-w-[80%] gap-10 md-down:max-w-full mx-auto">
       <TextSection 
         title={subheading} 
         subtitle={highlighted} 
@@ -46,10 +46,10 @@ const SolutionContent = (
     </div>
     <div
       className="h-96 bg-cover bg-center w-[80%] mx-auto rounded mb-4"
-      style={{ backgroundImage: `url(${image})` }} // Use the image passed as prop
+      style={{ backgroundImage: `url(${image})` }}
     >
     </div>
-    <div className="text-center py-8 flex flex-col lg:flex-row items-stretch max-w-[80%] md-down:max-w-full mx-auto">
+    <div className="text-center py-8 flex flex-col lg:flex-row items-stretch gap-10 max-w-[80%] md-down:max-w-full mx-auto">
       <TextSection 
         title={subheading} 
         subtitle={highlighted} 

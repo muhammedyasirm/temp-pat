@@ -23,21 +23,21 @@ const SectionedBackground = () => {
     },
     {
       id: 3,
-      title: "Cybersecurity",
+      title: "RAFM Solutions",
       description: "03",
       fullDescription:
-        "Protect systems, networks, and data from cyber threats and attacks.",
+        "Our advanced RAFM solution streamlines implementation, reducing the timeline to a maximum of two months. It addresses operator risks by unifying eight essential processes: Product and Offer Management, Rating and Billing, Order Entry and Provisioning, Network and Usage Management, Partner Management, Receivables Management, Customer Management, and Finance and Accounting.",
       backgroundImage:
         "/cyber-security.jpg",
     },
     {
       id: 4,
-      title: "Carrier Services",
+      title: "Sites Profitability",
       description: "04",
       fullDescription:
-        "Expand telecom offerings with A2B messaging & Roaming services",
+        "Our powerful software ensures site profitability by analysing and highlighting site-specific revenues and expenses, including fuel, spare parts, security, and maintenance costs. It detects SLA breaches and offers site reallocation recommendations to enhance operational efficiency. Leveraging AI, the system predicts revenue cannibalization and suggests optimized site management strategies to maximize ROI. ",
       backgroundImage:
-        "/carrier-service.jpg",
+        "/site-profit.jpg",
     },
   ];
 

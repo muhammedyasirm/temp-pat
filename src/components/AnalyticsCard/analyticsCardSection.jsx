@@ -4,8 +4,8 @@ import CardSection from '../ServiceCard/serviceCard';
 const AnalyticsCardSection = () => {
   const cards = [
     {
-      title: 'RA Maturity Optimization',
-      description: 'Optimize your technology, processes, and reporting to meet industry standards and improve organizational performance.',
+      title: 'Carrier Services',
+      description: 'Enhance your technology with A2B messaging and roaming services to deliver seamless connectivity and messaging across networks, improving customer satisfaction and driving business growth.',
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-orange text-primary-orange',
       hoverButtonColor: 'hover:bg-primary-orange hover:text-white',
@@ -13,8 +13,8 @@ const AnalyticsCardSection = () => {
       borderColor: 'hover:border-primary-orange',
     },
     {
-      title: 'Revenue Assurance Services',
-      description: 'Comprehensive solutions for billing, network management, and usage control, ensuring better financial outcomes.',
+      title: 'Financial Improvement',
+      description: 'Optimize your financial processes with services that streamline reporting, reduce costs, and boost efficiency. Our solutions drive better outcomes and improve business performance.',
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-green text-primary-green',
       hoverButtonColor: 'hover:bg-primary-green hover:text-white',
@@ -22,8 +22,8 @@ const AnalyticsCardSection = () => {
       borderColor: 'hover:border-primary-green',
     },
     {
-      title: 'Advanced Fraud Protection',
-      description: 'Protect your business with advanced fraud detection and prevention, securing your revenue and operations.',
+      title: 'Information Security',
+      description: 'Safeguard your data with our information security services. We help protect sensitive information, prevent breaches, and ensure your systems stay secure with advanced technology.',
       buttonText: 'Read More',
       defaultButtonColor: 'bg-transparent border-primary-blue text-primary-blue',
       hoverButtonColor: 'hover:bg-primary-blue hover:text-white',
@@ -46,7 +46,7 @@ const AnalyticsCardSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto py-10">
-        <h1 className='text-white flex justify-center text-5xl py-4 font-barlow'>Some Title Here</h1>
+        <h1 className='text-white flex justify-center text-5xl py-4 font-barlow'>Our Areas of Expertise</h1>
         <div className="flex flex-wrap md-down:flex-col md-down:p-5 justify-center gap-6 mt-10">
           {cards.map((card, index) => (
             <div

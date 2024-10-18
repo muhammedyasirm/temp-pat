@@ -1,70 +1,74 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useMemo } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import CompactHeader from "./compactHeader";
 import Sidebar from "./sideBar";
 
 const Header = () => {
-  const [showDropdown, setShowDropdown] = useState(""); // Holds the active dropdown menu
+  const [showDropdown, setShowDropdown] = useState("");
   const [activeMenu, setActiveMenu] = useState({ main: "", sub: "" });
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleNavSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
 
-  const navItems = [
-    { name: "HOME", to: "/" },
-    { name: "SOLUTIONS", to: "/solution" },
-    { name: "SERVICES", to: "/service" },
-    { name: "CASE STUDY", to: "/case-study" },
-    { name: "EVENTS", to: "/events" },
-    { name: "BLOG", to: "/blog" },
-    { name: "CONTACT", to: "/contact" },
-  ];
+  // Memoize navItems to avoid re-renders
+  const navItems = useMemo(
+    () => [
+      { name: "HOME", to: "/" },
+      { name: "SOLUTIONS", to: "/solution" },
+      { name: "SERVICES", to: "/service" },
+      { name: "CASE STUDY", to: "/case-study" },
+      { name: "EVENTS", to: "/events" },
+      { name: "BLOG", to: "/blog" },
+      { name: "CONTACT", to: "/contact" },
+    ],
+    []
+  );
 
-  const serviceSubItems = [
-    {
-      category: [
-        { name: "RA MATURITY ASSESMENT", to: "/service/ra-maturity-assesment" },
-        { name: "REVENUE ASSURANCE MS", to: "/service/revenue-assurance-ms" },
-        { name: "FINANCIAL IMPROVEMENT", to: "/service/financial-improvement" },
-      ],
-      border: "border-primary-orange",
-    },
-    {
-      category: [
-        { name: "CARRIER SERVICES", to: "/service/carrier-services" },
-        { name: "FRAUD MANAGEMENT", to: "/service/fraud-management" },
-        { name: "ASSET MANAGEMENT", to: "/service/asset-management" },
-      ],
-      border: "border-primary-green",
-    },
-    {
-      category: [
-        { name: "PAYMENT SOLUTIONS", to: "/service/payment-solutions" },
-        { name: "INFORMATION SECURITY", to: "/service/cyber-security" },
-      ],
-      border: "border-primary-blue",
-    },
-  ];
+  const serviceSubItems = useMemo(
+    () => [
+      {
+        category: [
+          { name: "RA MATURITY ASSESMENT", to: "/service/ra-maturity-assesment" },
+          { name: "REVENUE ASSURANCE MS", to: "/service/revenue-assurance-ms" },
+          { name: "FINANCIAL IMPROVEMENT", to: "/service/financial-improvement" },
+        ],
+        border: "border-primary-orange",
+      },
+      {
+        category: [
+          { name: "CARRIER SERVICES", to: "/service/carrier-services" },
+          { name: "FRAUD MANAGEMENT", to: "/service/fraud-management" },
+          { name: "INFORMATION SECURITY", to: "/service/cyber-security" },
+        ],
+        border: "border-primary-green",
+      },
+    ],
+    []
+  );
 
-  const solutionSubItems = [
-    {
-      category: [
-        { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution" },
-        { name: "ASSET MANAGEMENT", to: "/solution/asset-management" },
-        { name: "RAFM SOLUTION", to: "/solution/rafm-solution " },
-      ],
-      border: "border-primary-orange",
-    },
-    {
-      category: [
-        { name: "SITES PROFITABILITY", to: "/solution/sites-profitability" },
-      ],
-      border: "border-primary-green",
-    },
-  ];
+  const solutionSubItems = useMemo(
+    () => [
+      {
+        category: [
+          { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution" },
+          { name: "ASSET MANAGEMENT", to: "/solution/asset-management" },
+          { name: "RAFM SOLUTION", to: "/solution/rafm-solution" },
+        ],
+        border: "border-primary-orange",
+      },
+      {
+        category: [
+          { name: "SITES PROFITABILITY", to: "/solution/sites-profitability" },
+        ],
+        border: "border-primary-green",
+      },
+    ],
+    []
+  );
 
   const handleMenuClick = (mainMenu, subMenu = "", path = "") => {
     setActiveMenu({ main: mainMenu, sub: subMenu });
@@ -72,6 +76,29 @@ const Header = () => {
       navigate(path);
     }
   };
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    navItems.forEach((item) => {
+      if (currentPath.includes(item.to)) {
+        setActiveMenu({ main: item.name, sub: "" });
+      }
+    });
+    serviceSubItems.forEach((subCategory) => {
+      subCategory.category.forEach((subItem) => {
+        if (currentPath.includes(subItem.to)) {
+          setActiveMenu({ main: "SERVICES", sub: subItem.name });
+        }
+      });
+    });
+    solutionSubItems.forEach((subCategory) => {
+      subCategory.category.forEach((subItem) => {
+        if (currentPath.includes(subItem.to)) {
+          setActiveMenu({ main: "SOLUTIONS", sub: subItem.name });
+        }
+      });
+    });
+  }, [location.pathname, navItems, serviceSubItems, solutionSubItems]);
 
   return (
     <>
@@ -109,7 +136,7 @@ const Header = () => {
 
                       {showDropdown === "services" && (
                         <div
-                          className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-3 gap-8 w-[800px] max-w-[800px]`}
+                          className={`absolute left-[-10rem] top-2 bg-black text-white mt-3 p-4 shadow-lg z-50 grid grid-cols-2 gap-8 w-[600px] max-w-[600px]`}
                         >
                           {serviceSubItems.map((subCategory, subIndex) => (
                             <ul

@@ -5,6 +5,7 @@ import Footer from './components/Footer/footer';
 import Loader from './components/Loader/loader';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ScrollToTop from "./components/ScrollToTop/scrollToTop";
 
 const HomePage = lazy(() => import("./pages/Home/homePage"));
 const ContactPage = lazy(() => import("./pages/Contact/contactPage"));
@@ -17,6 +18,7 @@ const SolutionPage = lazy(() => import("./pages/Solutions/solutionPage"));
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <>
         <HeaderTop />
         <Suspense fallback={<Loader />}>
