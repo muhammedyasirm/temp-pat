@@ -14,7 +14,6 @@ const Header = () => {
     setSidebarVisible(!sidebarVisible);
   };
 
-  // Memoize navItems to avoid re-renders
   const navItems = useMemo(
     () => [
       { name: "HOME", to: "/" },
@@ -251,6 +250,7 @@ const Header = () => {
       <Sidebar
         navItems={navItems}
         serviceSubItems={serviceSubItems}
+        solutionSubItems={solutionSubItems}
         activeMenu={activeMenu}
         handleMenuClick={handleMenuClick}
         toggleNavSidebar={toggleNavSidebar}

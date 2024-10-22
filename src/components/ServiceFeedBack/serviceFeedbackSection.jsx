@@ -74,7 +74,7 @@ const FeedbackSection = ({
         </div>
       </div>
       <div className="bg-[#292929] flex justify-center">
-        <img src={graph} alt="graph" className="w-[70%]"/>
+        <img src={graph} alt="graph" className="w-full"/>
       </div>
     </>
   );

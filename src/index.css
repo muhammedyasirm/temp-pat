@@ -31,3 +31,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer base {
+  @font-face {
+    font-family: "Barlow";
+    src: url("../public/font/Barlow/Barlow-SemiBold.ttf");
+  }
+}

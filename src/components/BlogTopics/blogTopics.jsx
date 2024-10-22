@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const BlogTopics = () => {
   const [hoveredTopic, setHoveredTopic] = useState(null);
@@ -27,11 +27,10 @@ const BlogTopics = () => {
         </h2>
 
         <div className="flex flex-col gap-16">
-          {/* Fraud Management */}
           <div className="relative flex flex-col items-end ">
             <div
               className="cursor-pointer"
-              onMouseEnter={() => handleMouseEnter("fraud-management")}
+              onMouseEnter={() => handleMouseEnter('fraud-management')}
               onMouseLeave={handleMouseLeave}
             >
               <div className="relative text-start">
@@ -41,9 +40,9 @@ const BlogTopics = () => {
 
                 <img
                   src={
-                    hoveredTopic === "fraud-management"
-                      ? "/orange-cube.png"
-                      : "/black-cube.png"
+                    hoveredTopic === 'fraud-management'
+                      ? '/orange-cube.png'
+                      : '/black-cube.png'
                   }
                   alt="Cube"
                   className="absolute top-[-3.5rem] right-[-3rem] w-36 h-36 md-down:w-24 md-down:h-24 md-down:top-[-2rem] md-down:right-[-1rem]"
@@ -51,24 +50,25 @@ const BlogTopics = () => {
               </div>
 
               <p className="text-sm md:text-base max-w-[36rem] relative text-start ml-8 md-down:ml-4  justify-start font-montserrat items-start z-10">
-              Implement advanced fraud detection and prevention strategies to safeguard your business from revenue leakage and fraudulent activities. 
-              Our solutions utilize real-time monitoring and predictive analytics to protect your revenue streams.
+                Implement advanced fraud detection and prevention strategies to
+                safeguard your business from revenue leakage and fraudulent
+                activities. Our solutions utilize real-time monitoring and
+                predictive analytics to protect your revenue streams.
               </p>
             </div>
           </div>
 
-          {/* Revenue Assurance */}
           <div className="relative flex flex-col items-start justify-center">
             <div
               className="cursor-pointer"
-              onMouseEnter={() => handleMouseEnter("revenue-assurance")}
+              onMouseEnter={() => handleMouseEnter('revenue-assurance')}
               onMouseLeave={handleMouseLeave}
             >
               <img
                 src={
-                  hoveredTopic === "revenue-assurance"
-                    ? "/blue-cube.png"
-                    : "/black-cube.png"
+                  hoveredTopic === 'revenue-assurance'
+                    ? '/blue-cube.png'
+                    : '/black-cube.png'
                 }
                 alt="Cube"
                 className="absolute -top-14 -left-10  md-down:top-[-1.5rem] md-down:left-[-1.5rem] w-36 h-36 md-down:w-24 md-down:h-24"
@@ -77,20 +77,19 @@ const BlogTopics = () => {
                 REVENUE ASSURANCE
               </h3>
               <p className="text-sm relative md:text-base max-w-[36rem] ml-8 md-down:ml-4 z-10 font-montserrat">
-              Ensure accurate billing, efficient network usage, and optimized revenue management with our comprehensive 
-              Revenue Assurance services. We help businesses streamline their operations and maximize profitability by identifying
-              and correcting revenue leakage.
-
-
+                Ensure accurate billing, efficient network usage, and optimized
+                revenue management with our comprehensive Revenue Assurance
+                services. We help businesses streamline their operations and
+                maximize profitability by identifying and correcting revenue
+                leakage.
               </p>
             </div>
           </div>
 
-          {/* Maturity Assessment */}
           <div className="relative flex flex-col items-end">
             <div
               className="cursor-pointer"
-              onMouseEnter={() => handleMouseEnter("maturity-assessment")}
+              onMouseEnter={() => handleMouseEnter('maturity-assessment')}
               onMouseLeave={handleMouseLeave}
             >
               <div className="relative text-start">
@@ -100,9 +99,9 @@ const BlogTopics = () => {
 
                 <img
                   src={
-                    hoveredTopic === "maturity-assessment"
-                      ? "/green-cube.png"
-                      : "/black-cube.png"
+                    hoveredTopic === 'maturity-assessment'
+                      ? '/green-cube.png'
+                      : '/black-cube.png'
                   }
                   alt="Cube"
                   className="absolute top-[-3.5rem] right-[-3rem] w-36 h-36 md-down:w-24 md-down:h-24 md-down:top-[-2rem] md-down:right-[-1rem] z-0"
@@ -110,8 +109,10 @@ const BlogTopics = () => {
               </div>
 
               <p className="text-sm md:text-base max-w-[36rem] ml-8 md-down:ml-4  relative text-start justify-start items-start z-10 font-montserrat">
-              Evaluate your organization’s readiness for growth with our in-depth Maturity Assessment. We provide actionable insights into your processes, technology, and performance, 
-              helping you enhance efficiency and competitiveness.
+                Evaluate your organization’s readiness for growth with our
+                in-depth Maturity Assessment. We provide actionable insights
+                into your processes, technology, and performance, helping you
+                enhance efficiency and competitiveness.
               </p>
             </div>
           </div>

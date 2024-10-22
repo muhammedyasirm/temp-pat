@@ -4,16 +4,17 @@ const ServiceBanner = ({ title, subtitle, primaryColor, secondaryColor }) => {
   return (
     <div className="w-full">
       <div className="flex flex-col lg:flex-row">
-        <div className="relative w-full lg:w-[50%] p-36 flex justify-center items-center py-40"
+        <div
+          className="relative w-full lg:w-[50%] p-36 flex justify-center items-center py-40"
           style={{ backgroundColor: primaryColor }}
         >
           <div className="flex flex-col text-center lg:text-left">
             <h2 className="text-white text-5xl lg:text-8xl font-barlow font-bold">
               {title}
             </h2>
-            <span className="text-2xl text-white font-montserrat font-bold mt-4 lg:mt-0 text-end">
+            {/* <span className="text-2xl text-white font-montserrat font-bold mt-4 lg:mt-0 text-end">
               Solutions
-            </span>
+            </span> */}
           </div>
           <svg
             className="absolute bottom-0 right-0 w-full h-36"
@@ -23,14 +24,15 @@ const ServiceBanner = ({ title, subtitle, primaryColor, secondaryColor }) => {
             <polygon fill="black" points="0,50 100,100 0,100" />
           </svg>
         </div>
-        <div className="relative w-full lg:w-[50%]"
-          style={{ 
+        <div
+          className="relative w-full lg:w-[50%]"
+          style={{
             backgroundColor: secondaryColor,
             backgroundImage: `url('/analytics-bg.png')`,
-            backgroundSize: ' 100% 90%',
-            backgroundPosition: 'right bottom',
-            backgroundRepeat: 'no-repeat',
-            backgroundBlendMode: 'overlay',
+            backgroundSize: " 100% 90%",
+            backgroundPosition: "right bottom",
+            backgroundRepeat: "no-repeat",
+            backgroundBlendMode: "overlay",
           }}
         >
           <svg

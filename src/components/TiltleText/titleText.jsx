@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const PromoSection = () => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   const handleConsultClick = () => {
-    navigate("/contact"); // Navigate to the contact page when button is clicked
+    navigate("/contact");
   };
 
   return (

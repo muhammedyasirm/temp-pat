@@ -17,7 +17,7 @@ const InfoList = () => {
   ];
 
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-7">
       {infoItems.map((item, index) => (
         <div key={index} className="flex gap-8">
           <img

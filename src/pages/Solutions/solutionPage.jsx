@@ -29,6 +29,11 @@ const SolutionPage = () => {
         highlighted2={solutionData.subheading2Highlighted}
         description2={solutionData.subheading2Description}
         image2={solutionData.subheading2Image}
+        subheading3={solutionData.subheading3}
+        highlighted3={solutionData.subheading2Highlighted}
+        description3={solutionData.subheading2Description}
+        image3={solutionData.subheading3Image}
+        displayImage={solutionData.displayImage}
       />
     </>
   );

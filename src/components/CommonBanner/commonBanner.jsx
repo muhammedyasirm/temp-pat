@@ -21,7 +21,7 @@ const CommonBanner = ({ imageSrc, title, subtitle }) => {
           {title}
         </h1>
         {subtitle && (
-          <h2 className="text-2xl mt-4 text-center max-w-[50%]">{subtitle}</h2>
+          <h2 className="text-2xl mt-4 text-center max-w-[50%] md-down:max-w-full">{subtitle}</h2>
         )}
       </div>
     </div>

@@ -51,7 +51,7 @@ export const serviceContent = {
     subtitle: "Ensure revenue integrity across your systems",
     primaryColor: "#1B6D7E",
     secondaryColor: "#0E8D8E",
-    graph:'/orange-graph.png',
+    graph:'/revenue-assurance.png',
     subCategoriesWithIcon: [
       {
         categoryTitle: "Rating & Billing",

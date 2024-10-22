@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import { showToast } from "../Toast/toastify";
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { showToast } from '../Toast/toastify';
 
 const ReservationDialog = ({ isOpen, onClose, title, date }) => {
   const [formData, setFormData] = useState({
-    name: "",
-    mobile: "",
-    email: "",
+    name: '',
+    mobile: '',
+    email: '',
   });
 
   const handleChange = (e) => {
@@ -18,7 +18,7 @@ const ReservationDialog = ({ isOpen, onClose, title, date }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const templateParams = {
       title: title,
       date: date,
@@ -36,13 +36,11 @@ const ReservationDialog = ({ isOpen, onClose, title, date }) => {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          showToast("success", "Reservation submitted successfully!");
-          onClose(); // Close dialog after submission
+          showToast('success', 'Reservation submitted successfully!');
+          onClose();
         },
         (error) => {
-          console.log("FAILED...", error);
-          showToast("error", "Reservation failed to submit, please try again.");
+          showToast('error', 'Reservation failed to submit, please try again.');
         }
       );
   };
@@ -52,7 +50,9 @@ const ReservationDialog = ({ isOpen, onClose, title, date }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white p-8 rounded-lg w-[90%] max-w-lg">
-        <h2 className="text-2xl font-bold mb-4">{title} - {date}</h2>
+        <h2 className="text-2xl font-bold mb-4">
+          {title} - {date}
+        </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700">Name</label>

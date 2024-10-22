@@ -7,24 +7,18 @@ const ProfitAssurance = () => {
       <div className="absolute top-0 left-[25%] w-[50%] h-1 flex bg-primary-green"></div>
       <div className="flex gap-28 lg-down:gap-12 justify-center lg-down:flex-col">
         <div className="flex flex-col w-[40%] lg-down:w-full">
-          <div className="text-left mb-12 mt-4">
-            <img
-              src="/pat-text-white.png"
-              alt="Profit Assurance Technology"
-              className="h-[11rem] md-down:h-[9rem]"
-            />
-          </div>
           <div className="text-left mt-5 md-down:mt-0">
-            <h3 className="text-4xl md-down:text-xl font-semibold mb-4 font-montserrat">
+            <h3 className="text-4xl md-down:text-3xl font-semibold mb-4 font-montserrat">
               Enabling profitability for clients{" "}
               <span className="text-primary-green font-bold">since 2014</span>,
             </h3>
             <p className="text-lg md-down:text-lg leading-relaxed font-montserrat">
-              Our strategies ensure that every dollar earned is accurately captured, 
-              optimizing your financial performance by stopping revenue leakages. With 
-              advanced fraud detection solutions to safeguard and protect your revenue by
-              identifying and mitigating potential scams. With a diverse and expert team to
-              ensure your revenue growth.
+              Our strategies ensure that every dollar earned is accurately
+              captured, optimizing your financial performance by stopping
+              revenue leakages. With advanced fraud detection solutions to
+              safeguard and protect your revenue by identifying and mitigating
+              potential scams. With a diverse and expert team to ensure your
+              revenue growth.
             </p>
           </div>
         </div>

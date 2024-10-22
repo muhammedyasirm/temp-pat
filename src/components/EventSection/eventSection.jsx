@@ -22,7 +22,7 @@ const EventCard = ({ title, date, description, image }) => {
           {description}
         </div>
         <div className="flex lg-down:justify-start justify-end lg-down:mt-5 mt-7">
-          <button className="bg-primary-orange text-white py-3 sm-down:py-2 sm-down:px-4 px-8 text-lg md-down:text-sm"
+          <button className="bg-primary-orange text-white py-3 sm-down:py-2 sm-down:px-4 px-8 text-lg md-down:text-sm font-montserrat"
           onClick={handleOpenDialog}
           >
             Reserve Now

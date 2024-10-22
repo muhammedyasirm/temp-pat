@@ -2,8 +2,8 @@ import React from 'react';
 
 const ConferenceSection = () => {
   return (
-    <div className=" w-full bg-[#141414] text-white flex lg-down:flex-col items-center justify-between pr-24 lg-down:pr-0">
-      <div className="w-1/2 lg-down:w-full lg-down:flex lg-down:mt-0 lg-down:pl-7 h-full">
+    <div className=" w-full bg-[#141414] text-white flex md-down:flex-col items-center justify-between pr-24 lg-down:pr-0">
+      <div className="w-1/2 lg-down:w-full lg-down:flex lg-down:mt-0 md-down:pl-7 h-full">
         <img
           src="/conference-bg1.png"
           alt="Conference"

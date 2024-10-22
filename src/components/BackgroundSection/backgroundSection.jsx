@@ -1,43 +1,39 @@
-import React, { useState } from "react";
-import ResponsiveSectionedBackground from "./MobileView/mobileViewBackgroundSection";
+import React, { useState } from 'react';
+import ResponsiveSectionedBackground from './MobileView/mobileViewBackgroundSection';
 
 const SectionedBackground = () => {
   const sections = [
     {
       id: 1,
-      title: "Asset Management",
-      description: "01",
+      title: 'Asset Management',
+      description: '01',
       fullDescription:
-        "Maximize the value of your data, enhance compliance with regulations, and improve operational efficiency ensuring that data is accurate, accessible, and secure, allowing informed decisions",
-      backgroundImage:
-        "/asset-management.jpg",
+        'Maximize the value of your data, enhance compliance with regulations, and improve operational efficiency ensuring that data is accurate, accessible, and secure, allowing informed decisions',
+      backgroundImage: '/asset-management.jpg',
     },
     {
       id: 2,
-      title: "Payment Solutions",
-      description: "02",
+      title: 'Payment Solutions',
+      description: '02',
       fullDescription:
-        "Digitize payments guaranteeing security and convenience. With features like real-time tracking and fraud protection, a digital payment solution is a life transforming service.",
-      backgroundImage:
-        "/payment-solution.jpg",
+        'Digitize payments guaranteeing security and convenience. With features like real-time tracking and fraud protection, a digital payment solution is a life transforming service.',
+      backgroundImage: '/payment-solution.jpg',
     },
     {
       id: 3,
-      title: "RAFM Solutions",
-      description: "03",
+      title: 'RAFM Solutions',
+      description: '03',
       fullDescription:
-        "Our advanced RAFM solution streamlines implementation, reducing the timeline to a maximum of two months. It addresses operator risks by unifying eight essential processes: Product and Offer Management, Rating and Billing, Order Entry and Provisioning, Network and Usage Management, Partner Management, Receivables Management, Customer Management, and Finance and Accounting.",
-      backgroundImage:
-        "/cyber-security.jpg",
+        'Our advanced RAFM solution streamlines implementation, reducing the timeline to a maximum of two months. It addresses operator risks by unifying eight essential processes: Product and Offer Management, Rating and Billing, Order Entry and Provisioning, Network and Usage Management, Partner Management, Receivables Management, Customer Management, and Finance and Accounting.',
+      backgroundImage: '/cyber-security.jpg',
     },
     {
       id: 4,
-      title: "Sites Profitability",
-      description: "04",
+      title: 'Sites Profitability',
+      description: '04',
       fullDescription:
-        "Our powerful software ensures site profitability by analysing and highlighting site-specific revenues and expenses, including fuel, spare parts, security, and maintenance costs. It detects SLA breaches and offers site reallocation recommendations to enhance operational efficiency. Leveraging AI, the system predicts revenue cannibalization and suggests optimized site management strategies to maximize ROI. ",
-      backgroundImage:
-        "/site-profit.jpg",
+        'Our powerful software ensures site profitability by analysing and highlighting site-specific revenues and expenses, including fuel, spare parts, security, and maintenance costs. It detects SLA breaches and offers site reallocation recommendations to enhance operational efficiency. Leveraging AI, the system predicts revenue cannibalization and suggests optimized site management strategies to maximize ROI. ',
+      backgroundImage: '/site-profit.jpg',
     },
   ];
 
@@ -51,7 +47,7 @@ const SectionedBackground = () => {
         className="relative w-full h-[80vh] bg-cover bg-center transition-all duration-500 lg-down:hidden block"
         style={{ backgroundImage: `url(${currentBackground})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-10"></div>{" "}
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>{' '}
         <div className="relative w-full mx-auto flex justify-between h-full z-10">
           {sections.map((section) => (
             <div
