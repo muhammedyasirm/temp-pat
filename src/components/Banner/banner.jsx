@@ -27,12 +27,12 @@ const Banner = () => {
             fraud management
           </span>
           . Detect and stop revenue leakages, maximize profits with
-          <span className="text-primary-blue font-bold">
+          <span className="text-primary-green font-bold">
             {' '}
             revenue assurance
           </span>
           . Ensure efficiency & effectiveness by{' '}
-          <span className="text-primary-green font-bold">
+          <span className="text-primary-blue font-bold">
             maturity assessment{' '}
           </span>
           and gain insights from our team of experts.

@@ -72,6 +72,15 @@ const EventSection = () => {
           safeguard your operations."
         image="/events-logo2.png"
       />
+      <EventCard
+        title="NEW TECHNICAL SEMINAR"
+        date="07 DEC"
+        description="Maximize your business potential with our tailored solutions. From
+          revenue assurance to fraud management, Profit Assurance Technology
+          delivers expert services to enhance your financial performance and
+          safeguard your operations."
+        image="/events-logo2.png"
+      />
     </div>
   );
 };

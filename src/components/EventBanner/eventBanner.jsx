@@ -2,7 +2,7 @@ import React from 'react';
 
 const EventBanner = () => {
   return (
-    <div className="relative w-full h-[115vh] md-down:h-[60vh] overflow-hidden">
+    <div className="relative w-full h-[95vh] md-down:h-[60vh] overflow-hidden">
       <img
         src="/events-banner.png"
         alt="Fraud Prevention Conference"
