@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ResponsiveSectionedBackground = ({ sections }) => {
+
+  const navigate = useNavigate();
+
   return (
     <div>
       {sections.map((section) => (
@@ -14,7 +18,7 @@ const ResponsiveSectionedBackground = ({ sections }) => {
             <h2 className="text-2xl font-bold mb-4 font-barlow">{section.description}</h2>
             <h3 className="text-xl font-semibold mb-2 font-barlow">{section.title}</h3>
             <p className="text-sm font-montserrat">{section.fullDescription}</p>
-            <button className="bg-primary-orange text-white w-fit py-2 px-4 mt-4 rounded hover:bg-opacity-80 transition duration-300">
+            <button onClick={() => navigate(section.to)} className="bg-primary-orange text-white w-fit py-2 px-4 mt-4 rounded hover:bg-opacity-80 transition duration-300">
               Read More
             </button>
           </div>

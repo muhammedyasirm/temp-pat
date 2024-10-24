@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'Regular 400'],
+        montserrat: ['Montserrat', 'sans-serif'],
         barlow: ["Barlow", "sans-serif"],
       },
     },

@@ -31,17 +31,17 @@ const Header = () => {
     () => [
       {
         category: [
-          { name: "RA MATURITY ASSESMENT", to: "/service/ra-maturity-assesment" },
-          { name: "REVENUE ASSURANCE MS", to: "/service/revenue-assurance-ms" },
-          { name: "FINANCIAL IMPROVEMENT", to: "/service/financial-improvement" },
+          { name: "FRAUD MANAGEMENT", to: "/services/fraud-management" },
+          { name: "RA MATURITY ASSESMENT", to: "/services/maturity-assessment" },
+          { name: "REVENUE ASSURANCE MS", to: "/services/revenue-assurance" },
         ],
         border: "border-primary-orange",
       },
       {
         category: [
-          { name: "CARRIER SERVICES", to: "/service/carrier-services" },
-          { name: "FRAUD MANAGEMENT", to: "/service/fraud-management" },
-          { name: "INFORMATION SECURITY", to: "/service/cyber-security" },
+          { name: "FINANCIAL IMPROVEMENT", to: "/services/financial-improvement" },
+          { name: "CARRIER SERVICES", to: "/services/carrier-services" },          
+          { name: "INFORMATION SECURITY", to: "/services/information-security" },
         ],
         border: "border-primary-green",
       },

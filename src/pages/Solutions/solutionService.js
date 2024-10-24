@@ -51,7 +51,7 @@ const solutions = [
       "With built-in location mapping, you can track your transaction history and loyalty rewards effortlessly. All payments are encrypted, and sensitive information is never stored on your device or shared with merchants, ensuring maximum security.",
     "subheading3Image": "feature3.jpg",
   
-    "displayImage": "solution2-display.jpg"
+    "displayImage": "/payment-solution2.jpg"
   },
   {
     "id": "rafm-solution",

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import ResponsiveSectionedBackground from './MobileView/mobileViewBackgroundSection';
+import { useNavigate } from 'react-router-dom';
 
 const SectionedBackground = () => {
+
+  const navigate = useNavigate();
+
   const sections = [
     {
       id: 1,
@@ -10,6 +14,7 @@ const SectionedBackground = () => {
       fullDescription:
         'Maximize the value of your data, enhance compliance with regulations, and improve operational efficiency ensuring that data is accurate, accessible, and secure, allowing informed decisions',
       backgroundImage: '/asset-management.jpg',
+      to: '/solution/asset-management'
     },
     {
       id: 2,
@@ -18,6 +23,7 @@ const SectionedBackground = () => {
       fullDescription:
         'Digitize payments guaranteeing security and convenience. With features like real-time tracking and fraud protection, a digital payment solution is a life transforming service.',
       backgroundImage: '/payment-solution.jpg',
+      to: '/solution/payment-solution'
     },
     {
       id: 3,
@@ -26,6 +32,7 @@ const SectionedBackground = () => {
       fullDescription:
         'Our advanced RAFM solution streamlines implementation, reducing the timeline to a maximum of two months. It addresses operator risks by unifying eight essential processes: Product and Offer Management, Rating and Billing, Order Entry and Provisioning, Network and Usage Management, Partner Management, Receivables Management, Customer Management, and Finance and Accounting.',
       backgroundImage: '/cyber-security.jpg',
+      to: '/solution/rafm-solution'
     },
     {
       id: 4,
@@ -34,6 +41,7 @@ const SectionedBackground = () => {
       fullDescription:
         'Our powerful software ensures site profitability by analysing and highlighting site-specific revenues and expenses, including fuel, spare parts, security, and maintenance costs. It detects SLA breaches and offers site reallocation recommendations to enhance operational efficiency. Leveraging AI, the system predicts revenue cannibalization and suggests optimized site management strategies to maximize ROI. ',
       backgroundImage: '/site-profit.jpg',
+      to: '/solution/sites-profitability'
     },
   ];
 
@@ -69,7 +77,7 @@ const SectionedBackground = () => {
                   <p className="mt-4 text-sm font-montserrat">
                     {section.fullDescription}
                   </p>
-                  <button className="bg-primary-orange font-montserrat text-white px-6 py-2 mt-4 rounded hover:bg-opacity-80 transition duration-300">
+                  <button onClick={() => navigate(section.to)} className="bg-primary-orange font-montserrat text-white px-6 py-2 mt-4 rounded hover:bg-opacity-80 transition duration-300">
                     Read More
                   </button>
                 </div>

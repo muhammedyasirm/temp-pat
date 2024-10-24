@@ -1,9 +1,9 @@
 export const serviceContent = {
   "ra-maturity-assesment": {
     title: "Maturity Assessment",
-    subtitle: "Assess the maturity of your RA processes",
-    primaryColor: "#386B32",
-    secondaryColor: "#344526",
+    subtitle: "Our RA Maturity Assessment service aligns with TM Forum standards, addressing key areas such as technology, organization, processes, and performance measurement and reporting. We deliver thorough evaluations and actionable insights to strengthen your revenue assurance capabilities. Our team consists of highly qualified professionals with an average of 17 years of experience in the RAFM domain. The assessment highlights opportunities for improvement and growth. Contact us via email to learn more about how our RA Maturity Assessment can benefit your organization.",
+    primaryColor: "#1B6D7E",
+    secondaryColor: "#0E8D8E",
     graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
@@ -27,30 +27,12 @@ export const serviceContent = {
         icon: "/measurement-and-requirement.svg"
       }
     ],
-    feedBack: "Detailed information about RA Maturity Assessment...",
-    feedBackAuthor: "John Doe",
-    authorCompany: "Expresso",
-    authorImage: "src-to-author-image",
-    cubePoints: [
-      {
-        description: "First point to be here",
-        number: '545'
-      },
-      {
-        description: "Second point to be here",
-        number: '65%'
-      },
-      {
-        description: "Third point to be here",
-        number: '45.98'
-      }
-    ],
   },
   "revenue-assurance-ms": {
     title: "Revenue Assurance",
-    subtitle: "Ensure revenue integrity across your systems",
-    primaryColor: "#1B6D7E",
-    secondaryColor: "#0E8D8E",
+    subtitle: "At PAT, Revenue Assurance Managed Services is one of our core competencies and strengths. Our team averages 18 years of experience across Africa, Asia, and Europe, providing 24/7 managed services. We follow the TM Forum’s standard Revenue Assurance framework, addressing risks across rating and billing, network, finance, product, customer, and partner management. Our comprehensive evaluations and tailored solutions help improve operational efficiency and safeguard revenue integrity. Contact us via email to learn more about our Revenue Assurance Managed services.",
+    primaryColor: "#386B32",
+    secondaryColor: "#344526",
     graph:'/revenue-assurance.png',
     subCategoriesWithIcon: [
       {
@@ -84,60 +66,34 @@ export const serviceContent = {
         icon: "/partner-management.svg"
       },
     ],
-    feedBack: "Detailed information about Revenue Assurance MS...",
-    feedBackAuthor: "Jane Doe",
-    authorCompany: "Company A",
-    authorImage: "src-to-author-image",
-    cubePoints: [
-      {
-        description: "First point to be here",
-        number: '345'
-      },
-      {
-        description: "Second point to be here",
-        number: '75%'
-      },
-      {
-        description: "Third point to be here",
-        number: '21.78'
-      }
-    ],
   },
   "financial-improvement": {
     title: "Financial Improvement",
-    subtitle: "Improve your financial processes efficiently",
+    subtitle: "Our Financial Improvement Projects focus on key areas such as deferred revenue, revenue recognition, voucher management, and margin analysis. We provide comprehensive assessments and actionable insights to enhance financial performance while ensuring compliance, efficiency, and profitability.",
     primaryColor: "green",
     secondaryColor: "yellow",
     graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
-        categoryTitle: "Category 1",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-1"
+        categoryTitle: "Deferred Revenue",
+        description: "Processes to manage deferred revenue, ensuring accurate tracking and recognition over time. By leveraging its expertise to analyze IT system data and reconcile it with GL accounts.",
+        icon: "/defferedrevnue.png"
       },
       {
-        categoryTitle: "Category 2",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
-      }
-    ],
-    feedBack: "Detailed information about Financial Improvement...",
-    feedBackAuthor: "Emily Smith",
-    authorCompany: "Company B",
-    authorImage: "src-to-author-image",
-    cubePoints: [
-      {
-        description: "First point to be here",
-        number: '367'
+        categoryTitle: "Revenue Recognition",
+        description: "Implements frameworks for timely, compliant revenue recognition, enhancing financial transparency and accuracy.",
+        icon: "/revenuerecogn.png"
       },
       {
-        description: "Second point to be here",
-        number: '80%'
+        categoryTitle: "Margin Analysis",
+        description: "Conduct profit margin analysis to identify cost-saving and revenue growth opportunities, maximizing profitability and operational efficiency.",
+        icon: "/MarginAnalysis.png"
       },
       {
-        description: "Third point to be here",
-        number: '90.12'
-      }
+        categoryTitle: "Voucher Management",
+        description: "Monitor both physical vouchers and digital wallets, overseeing sales processing in ERP systems and distribution to warehouses, dealers, and end-users.",
+        icon: "/voucherMgmnt.png"
+      },
     ],
   },
   "carrier-services": {
@@ -148,43 +104,15 @@ export const serviceContent = {
     graph:'/orange-graph.png',
     subCategoriesWithIcon: [
       {
-        categoryTitle: "Category 1",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
+        categoryTitle: "Capacity Utilization",
+        description: "Effectively track network resource utilization to reduce costs and improve profit margins. Optimize network performance and revenue through strategic management and technology solutions.",
         icon: "/measurement-and-requirement.svg"
       },
       {
-        categoryTitle: "Category 2",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
+        categoryTitle: "Roaming & A2B Services ",
+        description: "Comprehensive support for managing A2B SMS operations to enhance performance, reduce costs, and maintain quality. Streamline A2B and roaming services, ensuring seamless connectivity, and optimizing revenue.",
+        icon: "/measurement-and-requirement.svg"
       },
-      {
-        categoryTitle: "Category 2",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
-      },
-      {
-        categoryTitle: "Category 2",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
-      },
-    ],
-    feedBack: "Detailed information about Carrier Services...",
-    feedBackAuthor: "Michael Johnson",
-    authorCompany: "Company C",
-    authorImage: "src-to-author-image",
-    cubePoints: [
-      {
-        description: "First point to be here",
-        number: '765'
-      },
-      {
-        description: "Second point to be here",
-        number: '55%'
-      },
-      {
-        description: "Third point to be here",
-        number: '45.67'
-      }
     ],
   },
   "fraud-management": {
@@ -219,61 +147,6 @@ export const serviceContent = {
         description: "Eliminate grey route traffic and prevent revenue leakage by identifying unauthorized routing and implementing effective monitoring systems.",
         icon: "/grey-route-detection.svg"
       },
-    ],
-    feedBack: "Detailed information about Fraud Management...",
-    feedBackAuthor: "Sarah Lee",
-    authorCompany: "Company D",
-    authorImage: "src-to-author-image",
-    cubePoints: [
-      {
-        description: "First point to be here",
-        number: '678'
-      },
-      {
-        description: "Second point to be here",
-        number: '90%'
-      },
-      {
-        description: "Third point to be here",
-        number: '54.32'
-      }
-    ],
-  },
-  "cyber-security": {
-    title: "Cyber Security",
-    subtitle: "Protect your data and privacy",
-    primaryColor: "green",
-    secondaryColor: "yellow",
-    graph:'/orange-graph.png',
-    subCategoriesWithIcon: [
-      {
-        categoryTitle: "Category 1",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-1"
-      },
-      {
-        categoryTitle: "Category 2",
-        description: "Some contenct sjdf k kskasudy  skdgs jsdhgf lskhia lawue lusldjgf agflahsg lsdgf k; ;sudhflkajygsdlfhga lsdjgh ljgsdfljhgaslfjhg lasgdf lhgs;kjalsdghf cvlscuglawfu",
-        icon: "icon-path-2"
-      }
-    ],
-    feedBack: "Detailed information about Cyber Security...",
-    feedBackAuthor: "Olivia Green",
-    authorCompany: "Company G",
-    authorImage: "src-to-author-image",
-    cubePoints: [
-      {
-        description: "First point to be here",
-        number: '877'
-      },
-      {
-        description: "Second point to be here",
-        number: '85%'
-      },
-      {
-        description: "Third point to be here",
-        number: '66.44'
-      }
     ],
   },
 };

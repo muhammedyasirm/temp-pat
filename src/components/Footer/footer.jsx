@@ -28,24 +28,25 @@ const Footer = () => {
   return (
     <div className="bg-black text-white py-12 px-3">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start px-4 md:px-0">
-        <div className="md:w-1/5 mb-8 md:mb-0">
+        <div className="md:w-1/3 mb-8 md:mb-0">
           <img
             src="/profit-assurance-logo.png"
             alt="Profit Assurance Technology"
-            className="mb-4"
+            className="mb-4 w-[60%]"
           />
           <ul className="text-gray-400">
             <li className="mb-2 flex gap-2 items-center">
               <PhoneFilled size={22} />
-              +971508925068
+              +971 4 4919588
             </li>
             <li className="mb-2 flex items-center gap-2">
               <Email size={22} />
               ProatTechno3@gmail.com
             </li>
             <li className="mb-2 flex items-center gap-2">
-              <Location size={22} />
-              Deira - Office 305 AL DURRAH
+              <Location size={24} />
+              Al Durrah4 - SBK Building, 305 - Al Garhoud <br/>
+              Dubai, United Arab Emirates
             </li>
           </ul>
           <div className="flex space-x-4 mt-4">
@@ -100,11 +101,7 @@ const Footer = () => {
               </Link>{" "}
               to see how we can support your business growth.
             </p>
-            <img
-              src="/pat-text-white.png"
-              alt="Profit Assurance Technology"
-              className="h-[3rem]"
-            />
+            
             <p className="text-gray-500 mt-4 text-sm">
               © 2024 - 2026 Profit Assurance Technology LLC. All rights
               reserved. You may not reproduce or communicate any of the content
