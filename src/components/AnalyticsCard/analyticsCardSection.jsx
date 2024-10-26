@@ -12,9 +12,9 @@ const AnalyticsCardSection = () => {
       defaultButtonColor:
         'bg-transparent border-primary-orange text-primary-orange',
       hoverButtonColor: 'hover:bg-primary-orange hover:text-white',
-      imgSrc: '/chart1.png',
+      imgSrc: '/carrier-card.png',
       borderColor: 'hover:border-primary-orange',
-      to: '/service/carrier-services',
+      to: '/services/carrier-services',
     },
     {
       title: 'Financial Improvement',
@@ -24,9 +24,9 @@ const AnalyticsCardSection = () => {
       defaultButtonColor:
         'bg-transparent border-primary-green text-primary-green',
       hoverButtonColor: 'hover:bg-primary-green hover:text-white',
-      imgSrc: '/chart2.png',
+      imgSrc: '/finance-card.png',
       borderColor: 'hover:border-primary-green',
-      to: '/service/financial-improvement',
+      to: '/services/financial-improvement',
     },
     {
       title: 'Information Security',
@@ -36,9 +36,9 @@ const AnalyticsCardSection = () => {
       defaultButtonColor:
         'bg-transparent border-primary-blue text-primary-blue',
       hoverButtonColor: 'hover:bg-primary-blue hover:text-white',
-      imgSrc: '/chart3.png',
+      imgSrc: '/is-card.png',
       borderColor: 'hover:border-primary-blue',
-      to: '/service/cyber-security',
+      to: '/services/information-security',
     },
   ];
 

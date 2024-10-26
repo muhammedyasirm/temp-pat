@@ -94,9 +94,8 @@ const InformationSecurityPage = () => {
   return (
     <>
       <ServiceBanner
-        title={'Information Security'}
-        subtitle={'Some Sub Title'}
-        primaryColor={'#1bbde0'}
+        title={'INFORMATION SECURITY'}
+        primaryColor={'#1B6F86'}
         secondaryColor={'yellow'}
         rightImage="/sample.png"
       />
@@ -141,6 +140,7 @@ const InformationSecurityPage = () => {
       <div className="bg-[#1C1C1C] p-10 px-28 lg-down:px-4">
         <FeedbackSection
           cubePoints={isgpoints.map((point) => ({ description: point.point }))}
+          cubeIcon="/blue-cube.png"
         />
       </div>
 

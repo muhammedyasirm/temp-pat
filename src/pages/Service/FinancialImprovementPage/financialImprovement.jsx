@@ -82,7 +82,7 @@ const FinancialImprovementPage = () => {
           <TextSection description={DetailedSection[1]?.detailedDescription} />
         </div>
         <div className="w-1/2 lg-down:w-full">
-          <ContactFormSection />
+          <ContactFormSection buttonColor="green" />
         </div>
       </div>
     </>

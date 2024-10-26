@@ -37,4 +37,9 @@ code {
     font-family: "Barlow";
     src: url("../public/font/Barlow/Barlow-SemiBold.ttf");
   }
+  @font-face {
+    font-family: "Barlow";
+    src: url("../public/font/Barlow/Barlow-Bold.ttf");
+    font-weight: 700; /* Bold */
+  }
 }

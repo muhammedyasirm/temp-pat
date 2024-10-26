@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PageNotFound = () => {
   return (
     <>
@@ -11,16 +13,15 @@ const PageNotFound = () => {
               Sorry, we couldn't find this page.
             </p>
             <p className="mt-4 mb-8 dark:text-gray-600">
-              But dont worry, you can find plenty of other things on our
+              But don't worry, you can find plenty of other things on our
               homepage.
             </p>
-            <a
-              rel="noopener noreferrer"
-              href="#"
+            <Link
+              to="/"
               className="px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50"
             >
               Back to homepage
-            </a>
+            </Link>
           </div>
         </div>
       </section>

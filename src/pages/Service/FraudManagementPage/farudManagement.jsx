@@ -96,6 +96,7 @@ const FraudManagementPage = () => {
             cubePoints={isgpoints.map((point) => ({
               description: point.point,
             }))}
+            cubeIcon="/orange-cube.png"
           />
         </div>
       </div>
@@ -110,7 +111,7 @@ const FraudManagementPage = () => {
           />
         </div>
         <div className="w-1/2 lg-down:w-full">
-          <ContactFormSection />
+          <ContactFormSection buttonColor="#f15930" />
         </div>
       </div>
 

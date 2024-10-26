@@ -30,8 +30,8 @@ const SolutionPage = () => {
         description2={solutionData.subheading2Description}
         image2={solutionData.subheading2Image}
         subheading3={solutionData.subheading3}
-        highlighted3={solutionData.subheading2Highlighted}
-        description3={solutionData.subheading2Description}
+        highlighted3={solutionData.subheading3Highlighted}
+        description3={solutionData.subheading3Description}
         image3={solutionData.subheading3Image}
         displayImage={solutionData.displayImage}
       />

@@ -1,6 +1,6 @@
 import React from 'react';
 import TextSection from './textSection';
-import ContactForm from '../ContactForm/contactForm';
+import ContactFormSection from '../ContactForm/formSection';
 
 const SolutionContent = ({
   subheading,
@@ -32,7 +32,7 @@ const SolutionContent = ({
           <img
             src={image}
             alt={subheading}
-            className="w-full h-[38rem] md-down:h-[20rem] object-cover rounded-sm shadow-md"
+            className="w-full h-[38rem] lg-down:h-[15rem] object-cover rounded-sm shadow-md"
           />
         </div>
       </div>
@@ -41,7 +41,7 @@ const SolutionContent = ({
           <img
             src={image2}
             alt={subheading2}
-            className="w-full object-cover h-[38rem] md-down:h-[20rem] mt-2 shadow-md rounded-sm"
+            className="w-full object-cover h-[38rem] lg-down:h-[15rem] mt-2 shadow-md rounded-sm"
           />
         </div>
         <div className='w-1/2 lg-down:w-full'>
@@ -53,7 +53,7 @@ const SolutionContent = ({
         </div>
       </div>
       <div
-        className="h-96 md-down:h-72 bg-cover bg-center w-[80%] md-down:w-full mx-auto rounded md-down:rounded-none mb-4"
+        className="h-96 md-down:h-72 bg-cover bg-center w-[80%] lg-down:w-full mx-auto rounded md-down:rounded-none mb-4"
         style={{ backgroundImage: `url(${displayImage})` }}
       ></div>
       <div className="text-center md-down:px-5 py-8 md-down:pb-0 lg-down:flex-col flex items-stretch gap-10 md-down:gap-0 max-w-[80%] md-down:max-w-full mx-auto">
@@ -69,11 +69,13 @@ const SolutionContent = ({
           <img
             src={image3}
             alt={subheading3}
-            className="h-[36rem] md-down:h-[20rem] w-full object-cover mt-2 shadow-md rounded-sm"
+            className="h-[46rem] lg-down:h-[15rem] w-full object-cover mt-2 shadow-md rounded-sm"
           />
         </div>
       </div>
-      <ContactForm />
+      <div className='max-w-[50%] mx-auto md-down:max-w-full md-down:py-4 py-8 md-down:px-5'>
+        <ContactFormSection />
+      </div>
     </div>
   );
 };

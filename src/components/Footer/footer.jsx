@@ -9,19 +9,19 @@ import {
 import { Link } from "react-router-dom";
 
 const serviceSubItems = [
-  { name: "RA Maturity Assesment", to: "/service/ra-maturity-assesment" },
-  { name: "Revenue assurance MS", to: "/service/revenue-assurance-ms" },
-  { name: "Financial Improvement ", to: "/service/financial-improvement" },
-  { name: "Carrier Services", to: "/service/carrier-services" },
-  { name: "Fraud Management", to: "/service/fraud-management" },
-  { name: "Information Security", to: "/service/cyber-security" },
+  { name: "RA Maturity Assesment", to: "/services/maturity-assessment" },
+  { name: "Revenue assurance MS", to: "/services/revenue-assurance" },
+  { name: "Financial Improvement ", to: "/services/financial-improvement" },
+  { name: "Carrier Services", to: "/services/carrier-services" },
+  { name: "Fraud Management", to: "/services/fraud-management" },
+  { name: "Information Security", to: "/services/information-security" },
 ];
 
 const solutionSubItems = [
   { name: "Payment Solutions", to: "/solution/payment-solution" },
   { name: "Asset Management", to: "/solution/asset-management" },
   { name: "RAFM Solution", to: "/solution/rafm-solution" },
-  { name: "Sites Profitability", to: "/solution/sites-profitability" },
+  { name: "Sites Profitability", to: "/solution/site-profitability-solution" },
 ];
 
 const Footer = () => {

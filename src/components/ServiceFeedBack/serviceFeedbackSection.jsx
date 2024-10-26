@@ -15,7 +15,7 @@ const StatItem = ({ icon, text }) => {
   );
 };
 
-const FeedbackSection = ({ cubePoints }) => {
+const FeedbackSection = ({ cubePoints, cubeIcon }) => {
   const half = Math.ceil(cubePoints.length / 2);
   const leftPoints = cubePoints.slice(0, half);
   const rightPoints = cubePoints.slice(half);
@@ -28,7 +28,7 @@ const FeedbackSection = ({ cubePoints }) => {
             {leftPoints.map((point, index) => (
               <StatItem
                 key={index}
-                icon={<img src="/blue-cube.png" alt="Cube" />}
+                icon={<img src={cubeIcon} alt="Cube" />}
                 text={point.description}
               />
             ))}
@@ -38,7 +38,7 @@ const FeedbackSection = ({ cubePoints }) => {
             {rightPoints.map((point, index) => (
               <StatItem
                 key={index}
-                icon={<img src="/blue-cube.png" alt="Cube" />}
+                icon={<img src={cubeIcon} alt="Cube" />} 
                 text={point.description}
               />
             ))}

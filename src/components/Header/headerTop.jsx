@@ -7,6 +7,7 @@ const Header = () => {
   const [showDropdown, setShowDropdown] = useState("");
   const [activeMenu, setActiveMenu] = useState({ main: "", sub: "" });
   const [sidebarVisible, setSidebarVisible] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null); // New state for hover effect
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -31,17 +32,17 @@ const Header = () => {
     () => [
       {
         category: [
-          { name: "FRAUD MANAGEMENT", to: "/services/fraud-management" },
-          { name: "RA MATURITY ASSESMENT", to: "/services/maturity-assessment" },
-          { name: "REVENUE ASSURANCE MS", to: "/services/revenue-assurance" },
+          { name: "FRAUD MANAGEMENT", to: "/services/fraud-management", color: "#f15930" },
+          { name: "RA MATURITY ASSESMENT", to: "/services/maturity-assessment", color: "#8ec63f" },
+          { name: "REVENUE ASSURANCE MS", to: "/services/revenue-assurance", color: "#12d2d4" },
         ],
         border: "border-primary-orange",
       },
       {
         category: [
-          { name: "FINANCIAL IMPROVEMENT", to: "/services/financial-improvement" },
-          { name: "CARRIER SERVICES", to: "/services/carrier-services" },          
-          { name: "INFORMATION SECURITY", to: "/services/information-security" },
+          { name: "FINANCIAL IMPROVEMENT", to: "/services/financial-improvement", color: "#8ec63f" },
+          { name: "CARRIER SERVICES", to: "/services/carrier-services", color: "#f15930" },
+          { name: "INFORMATION SECURITY", to: "/services/information-security", color: "#12d2d4" },
         ],
         border: "border-primary-green",
       },
@@ -53,15 +54,15 @@ const Header = () => {
     () => [
       {
         category: [
-          { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution" },
-          { name: "ASSET MANAGEMENT", to: "/solution/asset-management" },
-          { name: "RAFM SOLUTION", to: "/solution/rafm-solution" },
+          { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution", color: "#8ec63f" },
+          { name: "ASSET MANAGEMENT", to: "/solution/asset-management", color: "#f15930" },
+          { name: "RAFM SOLUTION", to: "/solution/rafm-solution", color: "#f15930" },
         ],
         border: "border-primary-orange",
       },
       {
         category: [
-          { name: "SITES PROFITABILITY", to: "/solution/sites-profitability" },
+          { name: "SITES PROFITABILITY", to: "/solution/site-profitability-solution", color: "#8ec63f" },
         ],
         border: "border-primary-green",
       },
@@ -126,8 +127,8 @@ const Header = () => {
                         className={`flex items-center cursor-pointer ${
                           activeMenu.main === "SERVICES"
                             ? "text-primary-orange"
-                            : "hover:text-primary-orange"
-                        }`}
+                            : ""
+                        } hover:text-primary-orange`}
                       >
                         {item.name}
                         <span className="ml-1">▾</span>
@@ -145,11 +146,9 @@ const Header = () => {
                               {subCategory.category.map((subItem, itemIndex) => (
                                 <li
                                   key={itemIndex}
-                                  className={`py-4 px-2 ${
-                                    activeMenu.sub === subItem.name
-                                      ? "text-primary-orange"
-                                      : "hover:text-primary-orange"
-                                  }`}
+                                  className="py-4 px-2"
+                                  onMouseEnter={() => setHoveredItem(subItem.name)}
+                                  onMouseLeave={() => setHoveredItem(null)}
                                   onClick={() =>
                                     handleMenuClick(
                                       "SERVICES",
@@ -157,6 +156,12 @@ const Header = () => {
                                       subItem.to
                                     )
                                   }
+                                  style={{
+                                    color:
+                                      activeMenu.sub === subItem.name || hoveredItem === subItem.name
+                                        ? subItem.color
+                                        : "",
+                                  }}
                                 >
                                   {subItem.name}
                                 </li>
@@ -176,8 +181,8 @@ const Header = () => {
                         className={`flex items-center cursor-pointer ${
                           activeMenu.main === "SOLUTIONS"
                             ? "text-primary-orange"
-                            : "hover:text-primary-orange"
-                        }`}
+                            : ""
+                        } hover:text-primary-orange`}
                       >
                         {item.name}
                         <span className="ml-1">▾</span>
@@ -195,11 +200,9 @@ const Header = () => {
                               {subCategory.category.map((subItem, itemIndex) => (
                                 <li
                                   key={itemIndex}
-                                  className={`py-4 px-2 ${
-                                    activeMenu.sub === subItem.name
-                                      ? "text-primary-orange"
-                                      : "hover:text-primary-orange"
-                                  }`}
+                                  className="py-4 px-2"
+                                  onMouseEnter={() => setHoveredItem(subItem.name)}
+                                  onMouseLeave={() => setHoveredItem(null)}
                                   onClick={() =>
                                     handleMenuClick(
                                       "SOLUTIONS",
@@ -207,6 +210,12 @@ const Header = () => {
                                       subItem.to
                                     )
                                   }
+                                  style={{
+                                    color:
+                                      activeMenu.sub === subItem.name || hoveredItem === subItem.name
+                                        ? subItem.color
+                                        : "",
+                                  }}
                                 >
                                   {subItem.name}
                                 </li>

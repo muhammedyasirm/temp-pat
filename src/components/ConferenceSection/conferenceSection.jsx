@@ -14,13 +14,11 @@ const ConferenceSection = () => {
       <div className="w-1/2  xl-down:p-6 lg-down:w-full">
         <h2 className="text-5xl font-barlow lg-down:text-4xl font-bold mb-4">CONFERENCE</h2>
         <p className="text-[1.5rem] font-montserrat lg-down:text-base mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
-          Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        Join us for an exploration of cutting-edge telecom solutions, covering key topics like revenue assurance, fraud management, and operational efficiency. Gain insights from industry leaders and network with professionals shaping the future of telecom. Whether you want to enhance your organization’s financial performance or stay ahead of industry trends, this conference offers the perfect opportunity to boost your knowledge.
         </p>
         <div className='flex justify-end lg-down:justify-start mr-8'>
           <button className="bg-primary-orange text-white px-6 py-3 text-lg rounded hover:bg-opacity-80 transition duration-300">
-          Read More
+          Register Now
         </button>
         </div>
       </div>

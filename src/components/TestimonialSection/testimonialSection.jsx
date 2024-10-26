@@ -5,22 +5,22 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote: "Profit Assurance Technology helped us reduce revenue leakage by 30% and improved our billing accuracy significantly.",
-      author: "John Smith",
+      author: "Jack Ellis",
       jobTitle: "Global Telecom Network",
     },
     {
       quote: "Their fraud management system cut our fraudulent activities by 40%, providing peace of mind and enhancing revenue protection.",
-      author: "John Smith",
+      author: "Amara Okoro",
       jobTitle: "Regional Bank, Africa",
     },
     {
       quote: "The tailored solutions by Profit Assurance Technology enhanced our financial reporting accuracy by 20%, streamlining our processes.",
-      author: "John Smith",
+      author: "Amelia Lily",
       jobTitle: "Fintech Startup, Asia",
     },
     {
       quote: "Their RA framework helped us scale efficiently, increasing investor confidence and expanding across multiple regions.",
-      author: "John Smith",
+      author: "Rachid Benhaddou",
       jobTitle: "Telecom Operator, Morocco",
     },
   ];

@@ -8,21 +8,21 @@ const CardSection = () => {
       description: 'IRSF, Wangiri, Grey Routes',
       icon: '/orange-cube.png',
       borderColor: 'hover:border-primary-orange',
-      to:'/service/fraud-management'
+      to:'/services/fraud-management'
     },
     {
       title: 'Revenue Assurance MS',
       description: 'Stop Revenue leakage Maximize Profits',
       icon: '/green-cube.png',
       borderColor: 'hover:border-primary-green',
-      to:'/service/ra-maturity-assesment'
+      to:'/services/maturity-assessment'
     },
     {
       title: 'RA Maturity Assessment',
       description: 'Internal & External Audits',
       icon: '/blue-cube.png',
       borderColor: 'hover:border-primary-blue',
-      to:'/service/revenue-assurance-ms'
+      to:'/services/revenue-assurance'
     },
   ];
 

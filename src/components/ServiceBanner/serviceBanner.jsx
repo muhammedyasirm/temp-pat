@@ -1,20 +1,25 @@
 import React from "react";
 
-const ServiceBanner = ({ title, subtitle, primaryColor, rightImage }) => {
+const ServiceBanner = ({ title, primaryColor, rightImage }) => {
   return (
     <div className="w-full">
       <div className="relative flex flex-col lg:flex-row">
-        {/* Left Section (Hidden on small screens) */}
         <div
-          className="relative w-full lg:w-[50%] p-36  justify-center items-center py-40 lg:block hidden"
+          className="relative w-full lg:w-[50%] pl-14 justify-center items-center py-40 lg:block hidden"
           style={{ backgroundColor: primaryColor }}
         >
           <div className="flex flex-col text-center lg:text-left max-w-min">
-            <h2 className="text-white text-4xl lg:text-7xl font-barlow font-bold text-left">
+            <h2
+              className="text-white text-4xl lg:text-[6.6rem] font-barlow font-bold text-left leading-[7rem]"
+              style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.5)" }}
+            >
               {title}
             </h2>
-            <span className="text-2xl text-white font-montserrat font-bold mt-6 lg:mt-4 text-right">
-              Services
+            <span
+              className="text-4xl text-white font-montserrat font-bold mt-6 lg:mt-4 text-right"
+              style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.5)" }}
+            >
+              SERVICES
             </span>
           </div>
           <svg
@@ -37,11 +42,17 @@ const ServiceBanner = ({ title, subtitle, primaryColor, rightImage }) => {
         >
           <div className="absolute inset-0 flex justify-center items-center lg:hidden">
             <div className="text-center">
-              <h2 className="text-white text-5xl lg:text-8xl font-barlow font-bold">
+              <h2
+                className="text-white text-5xl lg:text-8xl font-barlow font-bold"
+                style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.5)" }} // Adding text-shadow
+              >
                 {title}
               </h2>
-              <span className="text-2xl text-white font-montserrat font-bold mt-6">
-                Services
+              <span
+                className="text-2xl text-white font-montserrat font-bold mt-6"
+                style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.5)" }} // Adding text-shadow
+              >
+                SERVICES
               </span>
             </div>
           </div>
