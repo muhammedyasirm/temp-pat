@@ -41,7 +41,7 @@ const SectionedBackground = () => {
       fullDescription:
         'Our powerful software ensures site profitability by analysing and highlighting site-specific revenues and expenses, including fuel, spare parts, security, and maintenance costs. It detects SLA breaches and offers site reallocation recommendations to enhance operational efficiency. Leveraging AI, the system predicts revenue cannibalization and suggests optimized site management strategies to maximize ROI. ',
       backgroundImage: '/site-profit.jpg',
-      to: '/solution/sites-profitability'
+      to: '/solution/site-profitability-solution'
     },
   ];
 
@@ -52,7 +52,7 @@ const SectionedBackground = () => {
   return (
     <>
       <div
-        className="relative w-full h-[80vh] bg-cover bg-center transition-all duration-500 lg-down:hidden block"
+        className="relative w-full h-[85vh] bg-cover bg-center transition-all duration-500 lg-down:hidden block"
         style={{ backgroundImage: `url(${currentBackground})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>{' '}
@@ -65,16 +65,16 @@ const SectionedBackground = () => {
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 group-hover:bg-opacity-80"></div>
 
-              <div className="relative p-8 z-10 mb-12 transition-transform duration-500 transform group-hover:-translate-y-2">
-                <h2 className="text-3xl font-bold mb-4 transition duration-300 group-hover:text-primary-orange font-barlow">
+              <div className="relative p-8  z-10 mb-12 group-hover:mb-2 transition-all duration-500 transform group-hover:-translate-y-2">
+                <h2 className="text-4xl md-down:text-2xl font-bold mb-4 transition duration-300 group-hover:text-primary-orange font-barlow">
                   {section.description}
                 </h2>
-                <h3 className="text-lg font-semibold transition duration-300 group-hover:text-primary-orange font-barlow">
+                <h3 className="text-xl md-down:text-lg font-semibold transition duration-300 group-hover:text-primary-orange font-barlow">
                   {section.title}
                 </h3>
 
                 <div className="overflow-hidden h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500">
-                  <p className="mt-4 text-sm font-montserrat">
+                  <p className="mt-4 text-lg font-montserrat">
                     {section.fullDescription}
                   </p>
                   <button onClick={() => navigate(section.to)} className="bg-primary-orange font-montserrat text-white px-6 py-2 mt-4 rounded hover:bg-opacity-80 transition duration-300">

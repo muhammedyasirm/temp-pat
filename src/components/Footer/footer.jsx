@@ -35,15 +35,15 @@ const Footer = () => {
             className="mb-4 w-[60%]"
           />
           <ul className="text-gray-400">
-            <li className="mb-2 flex gap-2 items-center">
+            <li className="mb-2 flex gap-2 items-center text-sm font-montserrat">
               <PhoneFilled size={22} />
               +971 4 4919588
             </li>
-            <li className="mb-2 flex items-center gap-2">
+            <li className="mb-2 flex items-center gap-2 text-sm font-montserrat">
               <Email size={22} />
               ProatTechno3@gmail.com
             </li>
-            <li className="mb-2 flex items-center gap-2">
+            <li className="mb-2 flex items-center gap-2 text-sm font-montserrat">
               <Location size={24} />
               Al Durrah4 - SBK Building, 305 - Al Garhoud <br/>
               Dubai, United Arab Emirates
@@ -68,7 +68,7 @@ const Footer = () => {
               <Link
                 key={index}
                 to={solution.to}
-                className="text-gray-400 block hover:text-white"
+                className="text-gray-400 block hover:text-white text-sm font-montserrat "
               >
                 {solution.name}
               </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
               <Link
                 key={index}
                 to={service.to}
-                className="text-gray-400 block hover:text-white"
+                className="text-gray-400 block hover:text-white text-sm font-montserrat"
               >
                 {service.name}
               </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
 
           <div className="md:w-1/3 border-l-2 border-primary-blue pl-4">
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-4 text-sm font-montserrat">
               Want to know more about our services and solutions?{" "}
               <Link
                 to="/contact"
@@ -102,7 +102,7 @@ const Footer = () => {
               to see how we can support your business growth.
             </p>
             
-            <p className="text-gray-500 mt-4 text-sm">
+            <p className="text-gray-500 mt-4 text-sm font-montserrat">
               © 2024 - 2026 Profit Assurance Technology LLC. All rights
               reserved. You may not reproduce or communicate any of the content
               on this website, including files downloadable from this website,

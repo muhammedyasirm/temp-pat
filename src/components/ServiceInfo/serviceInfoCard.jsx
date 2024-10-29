@@ -9,8 +9,8 @@ const InfoCard = ({ title, description, icon, showMore, onClick }) => {
       <div className="flex items-center justify-center w-full h-36 mb-4">
         <img src={icon} alt={`${title} icon`} className="w-24 h-24" />
       </div>
-      <div className="flex-grow flex flex-col items-center justify-center">
-        <p className="text-xl md-down:text-lg">
+      <div className="flex-grow flex flex-col items-center justify-start">
+        <p className="text-lg font-montserrat md-down:text-sm">
           {description}
           {showMore && (
             <>

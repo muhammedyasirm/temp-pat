@@ -52,9 +52,9 @@ const ContactFormSection = ({ buttonColor = "#f15930" }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-8">
         <div>
-          <label className="block text-white mb-2">Name</label>
+          <label className="block text-white mb-2 text-lg font-montserrat md-down:text-sm">Name</label>
           <input
             type="text"
             name="name"
@@ -66,7 +66,7 @@ const ContactFormSection = ({ buttonColor = "#f15930" }) => {
           />
         </div>
         <div>
-          <label className="block text-white mb-2">E-Mail</label>
+          <label className="block text-white mb-2 text-lg font-montserrat md-down:text-sm">E-Mail</label>
           <input
             type="email"
             name="email"
@@ -78,7 +78,7 @@ const ContactFormSection = ({ buttonColor = "#f15930" }) => {
           />
         </div>
         <div>
-          <label className="block text-white mb-2">Phone</label>
+          <label className="block text-white mb-2 text-lg font-montserrat md-down:text-sm">Phone</label>
           <input
             type="tel"
             name="phone"
@@ -90,7 +90,7 @@ const ContactFormSection = ({ buttonColor = "#f15930" }) => {
           />
         </div>
         <div>
-          <label className="block text-white mb-2">Message</label>
+          <label className="block text-white mb-2 text-lg font-montserrat md-down:text-sm">Message</label>
           <textarea
             name="message"
             placeholder="MESSAGE"
@@ -102,7 +102,7 @@ const ContactFormSection = ({ buttonColor = "#f15930" }) => {
         </div>
         <button
           type="submit"
-          className="w-full py-2 font-bold text-white hover:opacity-80"
+          className="w-full py-2 font-bold text-white hover:opacity-80 text-lg font-montserrat md-down:text-sm"
           style={{ backgroundColor: buttonColor }}
         >
           SUBMIT

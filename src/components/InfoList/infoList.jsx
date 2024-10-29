@@ -23,9 +23,9 @@ const InfoList = () => {
           <img
             src={item.icon}
             alt="Icon"
-            className="w-12 h-12 md-down:w-8 md-down:h-8 md-down:mt-1 object-contain"
+            className="w-12 h-12 md-down:w-10 md-down:h-10 md-down:mt-1"
           />
-          <p className="text-lg leading-relaxed flex-1 font-montserrat">
+          <p className="text-lg md-down:text-sm leading-relaxed flex-1 font-montserrat">
             {item.text}
           </p>
         </div>

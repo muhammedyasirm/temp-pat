@@ -2,12 +2,12 @@ import React from "react";
 
 const StatItem = ({ icon, text }) => {
   return (
-    <div className="flex gap-10 md-down:gap-5 mb-6 text-start md-down:flex-col md-down:text-center md-down:mt-4">
+    <div className="flex gap-10 md-down:gap-5 mb-6 text-start md-down:flex-col  md-down:mt-4">
       <div className="flex items-center md-down:gap-5">
         <div className="w-10 h-10 min-w-10 min-h-10 flex items-center justify-center rounded-full mr-4">
           {icon}
         </div>
-        <p className="text-white text-2xl lg-down:text-2xl">
+        <p className="text-white text-lg md-down:text-sm font-montserrat">
           {text}
         </p>
       </div>

@@ -5,7 +5,7 @@ import CardSection from '../ServiceCard/serviceCard';
 const AnalyticsCardSection = () => {
   const cards = [
     {
-      title: 'Carrier Services',
+      title: 'CARRIER SERVICES',
       description:
         'Enhance your technology with A2B messaging and roaming services to deliver seamless connectivity and messaging across networks, improving customer satisfaction and driving business growth.',
       buttonText: 'Read More',
@@ -17,7 +17,7 @@ const AnalyticsCardSection = () => {
       to: '/services/carrier-services',
     },
     {
-      title: 'Financial Improvement',
+      title: 'FINANCIAL IMPROVEMENT',
       description:
         'Optimize your financial processes with services that streamline reporting, reduce costs, and boost efficiency. Our solutions drive better outcomes and improve business performance.',
       buttonText: 'Read More',
@@ -29,7 +29,7 @@ const AnalyticsCardSection = () => {
       to: '/services/financial-improvement',
     },
     {
-      title: 'Information Security',
+      title: 'INFORMATION SECURITY',
       description:
         'Safeguard your data with our information security services. We help protect sensitive information, prevent breaches, and ensure your systems stay secure with advanced technology.',
       buttonText: 'Read More',
@@ -57,14 +57,14 @@ const AnalyticsCardSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto py-10 md-down:py-5">
-        <h1 className="text-white flex justify-center text-5xl md-down:text-3xl py-4 font-barlow font-bold">
+        <h1 className="text-white flex justify-center text-4xl md-down:text-2xl py-4 font-barlow font-bold">
           OUR AREAS OF EXPERTISE
         </h1>
-        <div className="flex flex-wrap md-down:flex-col md-down:p-5 justify-center gap-6 mt-10 md-down:mt-0">
+        <div className="flex flex-wrap md-down:flex-col justify-center w-full gap-6 mt-10 md-down:mt-0 px-2">
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`border-2 border-gray-600 cursor-pointer ${card.borderColor} p-4 w-[100%] sm:w-[90%] md:w-[45%] lg:w-[30%] flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
+              className={`py-5 border-2 min-w-[30%] border-gray-600 cursor-pointer ${card.borderColor} p-4 w-[100%] sm:w-[90%] md:w-[45%] lg:w-[31%] flex flex-col items-center gap-5 bg-black bg-opacity-65 hover:shadow-lg transition duration-300`}
             >
               <img
                 src={card.imgSrc}
@@ -73,15 +73,15 @@ const AnalyticsCardSection = () => {
               />
               <div className="flex flex-col justify-between h-full text-center text-white">
                 <div className="flex-grow">
-                  <h3 className="text-2xl mt-4 font-barlow">{card.title}</h3>
-                  <p className="mt-2 text-sm font-montserrat">
+                  <h3 className="text-xl mt-4 md-down:mt-0 md-down:text-lg font-semibold font-barlow">{card.title}</h3>
+                  <p className="mt-2 text-sm md-down:text-sm font-montserrat">
                     {card.description}
                   </p>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center md-down:mt-3">
                   <Link to={card.to}>
                     <button
-                      className={`border-2 ${card.defaultButtonColor} ${card.hoverButtonColor} px-8 py-2 mt-4 rounded transition w-40 duration-300 font-montserrat`}
+                      className={`border-2 mb-0.5 ${card.defaultButtonColor} ${card.hoverButtonColor} px-4 py-2 text-sm md-down:text-sm rounded transition w-40 duration-300 font-montserrat`}
                     >
                       {card.buttonText}
                     </button>
