@@ -1,6 +1,7 @@
 import ContactFormSection from '../../../components/ContactForm/formSection';
 import ServiceBanner from '../../../components/ServiceBanner/serviceBanner';
 import ServiceInfoCard from '../../../components/ServiceInfo/serviceInfoCard';
+import ManagedSOC from '../../../components/SolutionCard/solutionCard';
 import TextSection from '../../../components/SolutionContent/textSection';
 
 const subCategoriesWithIcon = [
@@ -33,7 +34,7 @@ const subCategoriesWithIcon = [
 const DetailedSection = [
   {
     detailedDescription:
-      'Our Financial Improvement Projects focus on key areas such as deferred revenue, revenue recognition, voucher management, and margin analysis',
+      'Our Financial Improvement Projects target essential areas like deferred revenue, revenue recognition, voucher management, and margin analysis to enhance financial clarity and efficiency. We ensure accurate tracking of deferred revenue, implement compliant revenue recognition frameworks, conduct in-depth margin analysis for profitability insights, and manage voucher distribution across physical and digital channels. These initiatives strengthen financial integrity, optimize revenue streams, and support sustainable growth.',
   },
   {
     detailedDescription:
@@ -42,13 +43,6 @@ const DetailedSection = [
 ];
 
 const FinancialImprovementPage = () => {
-  const handleScrollToSection = (title) => {
-    const section = document.getElementById(title);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <ServiceBanner
@@ -61,20 +55,14 @@ const FinancialImprovementPage = () => {
 
       <ServiceInfoCard
         subCategories={subCategoriesWithIcon}
-        onReadMore={handleScrollToSection}
       />
 
-      <div className="bg-[#1C1C1C] p-10 px-28 flex gap-6 lg-down:flex-col-reverse lg-down:px-4">
-        <div className="lg:w-1/2 h-full lg:h-auto flex-grow flex items-center justify-center">
-          <img
-            src="/fi-pic.jpg"
-            alt="Managed SOC"
-            className="w-full h-[32rem] md-down:h-[20rem] object-cover rounded-sm shadow-md"
-          />
-        </div>
-        <div className="w-1/2 lg-down:w-full">
-          <TextSection description={DetailedSection[0].detailedDescription} />
-        </div>
+      <div className="bg-[#1C1C1C] p-5" id="Managed SOC">
+        <ManagedSOC
+          title={DetailedSection[0].title}
+          description={DetailedSection[0].detailedDescription}
+          imageUrl="/fi-pic.jpg"
+        />
       </div>
 
       <div className="bg-[#1C1C1C] p-10 px-28 flex gap-6 lg-down:flex-col lg-down:px-4">

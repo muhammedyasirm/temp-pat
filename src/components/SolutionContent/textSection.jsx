@@ -17,7 +17,7 @@ const TextSection = ({ title, subtitle, description }) => {
         )}
         
         {description && (
-          <p className="text-xl md-down:text-lg leading-10 md-down:max-w-full  mb-4 md-down:mb-0 font-montserrat">
+          <p className="text-lg font-montserrat md-down:text-sm leading-10 md-down:max-w-full  mb-4 md-down:mb-0">
             {description}
           </p>
         )}

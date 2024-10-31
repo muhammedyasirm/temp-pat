@@ -142,7 +142,7 @@ const InformationSecurityPage = () => {
         />
       </div>
 
-      <div className="bg-[#1C1C1C] p-10 px-36 flex gap-6 lg-down:flex-col lg-down:px-4">
+      <div className="bg-[#1C1C1C] p-10 lg-down:p-5 px-36 flex gap-6 lg-down:flex-col lg-down:px-4">
         <div className="w-1/2 lg-down:w-full">
           <TextSection description={DetailedSection[2]?.detailedDescription} />
         </div>

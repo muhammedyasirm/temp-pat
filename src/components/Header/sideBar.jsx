@@ -43,7 +43,7 @@ const Sidebar = ({
 
       <div
         ref={sidebarRef}
-        className={`sidebar fixed top-0 left-0 h-full bg-black text-white w-64 p-6 transform ${
+        className={`sidebar fixed top-0 left-0 h-full bg-black text-white w-80 p-6 transform ${
           sidebarVisible ? 'translate-x-0' : '-translate-x-full'
         } transition-transform duration-300 ease-in-out z-50`}
       >

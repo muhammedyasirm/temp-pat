@@ -1,6 +1,7 @@
 import ContactFormSection from '../../../components/ContactForm/formSection';
 import ServiceBanner from '../../../components/ServiceBanner/serviceBanner';
 import ServiceInfoCard from '../../../components/ServiceInfo/serviceInfoCard';
+import ManagedSOC from '../../../components/SolutionCard/solutionCard';
 import TextSection from '../../../components/SolutionContent/textSection';
 
 const subCategoriesWithIcon = [
@@ -33,7 +34,7 @@ const subCategoriesWithIcon = [
 const DetailedSection = [
   {
     detailedDescription:
-      'Our RA Maturity Assessment service aligns with TM Forum standards, addressing key areas such as technology, organization, processes, and performance measurement and reporting. We deliver thorough evaluations and actionable insights to strengthen your revenue assurance capabilities.',
+      'Our RA Maturity Assessment service is meticulously aligned with TM Forum standards, focusing on critical areas including technology, organizational structure, processes, and performance measurement and reporting. Through comprehensive evaluations and tailored insights, we empower you to fortify your revenue assurance capabilities, optimizing both operational resilience and financial integrity. Our approach ensures that your organization is not only compliant but also well-prepared to proactively address revenue-related challenges in a dynamic market landscape.',
   },
   {
     detailedDescription:
@@ -64,20 +65,12 @@ const MaturityAssessmentPage = () => {
         onReadMore={handleScrollToSection}
       />
 
-      <div className="bg-[#1C1C1C] p-10 px-28 flex gap-6">
-        <div className="lg:w-1/2 h-full lg:h-auto flex-grow flex items-center justify-center">
-          <img
-            src="/MA-pic.jpg"
-            alt="Managed SOC"
-            className="w-full h-[32rem] md-down:h-[20rem] object-cover rounded-sm shadow-md"
-          />
-        </div>
-        <div className="w-1/2">
-          <TextSection
-            title={DetailedSection[0].title}
-            description={DetailedSection[0].detailedDescription}
-          />
-        </div>
+      <div className="bg-[#1C1C1C] p-5">
+        <ManagedSOC
+          title={DetailedSection[0].title}
+          description={DetailedSection[0].detailedDescription}
+          imageUrl="/MA-pic.jpg"
+        />
       </div>
 
       <div className="bg-[#1C1C1C] p-10 px-28 flex gap-6">
@@ -85,7 +78,7 @@ const MaturityAssessmentPage = () => {
           <TextSection description={DetailedSection[1]?.detailedDescription} />
         </div>
         <div className="w-1/2">
-          <ContactFormSection />
+          <ContactFormSection buttonColor='#8ec63f'/>
         </div>
       </div>
     </>

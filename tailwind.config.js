@@ -15,6 +15,8 @@ module.exports = {
         lg: "992px",
         "xl-down": { max: "1199px" },
         xl: "1200px",
+        "xxl-down": {max: "1439px"},
+        xxl: "1440"
       },
       colors: {
         primary: {

@@ -1,7 +1,7 @@
 import ContactFormSection from '../../../components/ContactForm/formSection';
 import ServiceBanner from '../../../components/ServiceBanner/serviceBanner';
-import FeedbackSection from '../../../components/ServiceFeedBack/serviceFeedbackSection';
 import ServiceInfoCard from '../../../components/ServiceInfo/serviceInfoCard';
+import ManagedSOC from '../../../components/SolutionCard/solutionCard';
 import TextSection from '../../../components/SolutionContent/textSection';
 
 const subCategoriesWithIcon = [
@@ -70,7 +70,7 @@ const FraudManagementPage = () => {
       <ServiceBanner
         title={'FRAUD DETECTION'}
         subtitle={'Some Sub Title'}
-        primaryColor={'#863D2E'}
+        primaryColor={'#f15930'}
         secondaryColor={'yellow'}
         rightImage="/sample.png"
       />
@@ -79,28 +79,14 @@ const FraudManagementPage = () => {
         subCategories={subCategoriesWithIcon}
       />
 
-      <div className="bg-[#1C1C1C] p-10 px-28 lg-down:px-4 flex gap-6 lg-down:flex-col">
-      <div className="lg:w-1/2 h-full lg:h-auto flex-grow flex items-center justify-center">
-          <img
-            src="/fm-pc.jpg"
-            alt="Managed SOC"
-            className="w-full h-[32rem] md-down:h-[20rem] object-cover rounded-sm shadow-md"
-          />
-        </div>
-        <div className="flex flex-col w-1/2 lg-down:w-full">
-          <TextSection
-            title={DetailedSection[0].title}
-            description={DetailedSection[0].detailedDescription}
-          />
-          <FeedbackSection
-            cubePoints={isgpoints.map((point) => ({
-              description: point.point,
-            }))}
-            cubeIcon="/orange-cube.png"
-          />
-        </div>
+      <div className="bg-[#1C1C1C] p-5">
+        <ManagedSOC
+          title={DetailedSection[0].title}
+          description={DetailedSection[0].detailedDescription}
+          imageUrl="/fm-pc.jpg"
+          isgpoints={isgpoints}
+        />
       </div>
-
       <div
         className="bg-[#1C1C1C] p-10 px-28 lg-down:px-4 flex gap-6 lg-down:flex-col"
       >
@@ -116,8 +102,7 @@ const FraudManagementPage = () => {
       </div>
 
       <div className="bg-[#1C1C1C] p-10 px-28 flex gap-6">
-        <TextSection description={DetailedSection[2]?.detailedDescription} />
-        
+        <TextSection description={DetailedSection[2]?.detailedDescription} /> 
       </div>
     </>
   );

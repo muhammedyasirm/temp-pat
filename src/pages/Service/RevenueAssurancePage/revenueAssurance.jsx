@@ -1,6 +1,7 @@
 import ContactFormSection from '../../../components/ContactForm/formSection';
 import ServiceBanner from '../../../components/ServiceBanner/serviceBanner';
 import ServiceInfoCard from '../../../components/ServiceInfo/serviceInfoCard';
+import ManagedSOC from '../../../components/SolutionCard/solutionCard';
 import TextSection from '../../../components/SolutionContent/textSection';
 
 const subCategoriesWithIcon = [
@@ -45,7 +46,7 @@ const subCategoriesWithIcon = [
 const DetailedSection = [
   {
     detailedDescription:
-      'Revenue Assurance Managed Services is one of our core competencies and strengths. Our team averages 18 years of experience across Africa, Asia, and Europe, providing 24/7 managed services. We follow the TM Forum’s standard Revenue Assurance framework, addressing risks across rating and billing, network, finance, product, customer, and partner management',
+      'Revenue Assurance Managed Services is one of our core competencies and strengths. With an average of 18 years of experience across Africa, Asia, and Europe, our team provides dedicated 24/7 managed services tailored to your needs. We adhere strictly to the TM Forum’s standard Revenue Assurance framework, addressing critical risks comprehensively across rating and billing, network integrity, financial controls, product management, customer satisfaction, and partner relations. Our expertise ensures robust protection of your revenue streams and operational continuity, empowering your business to proactively manage risks in an evolving global landscape.',
   },
   {
     detailedDescription:
@@ -54,13 +55,6 @@ const DetailedSection = [
 ];
 
 const RevenueAssurancePage = () => {
-  const handleScrollToSection = (title) => {
-    const section = document.getElementById(title);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <ServiceBanner
@@ -73,28 +67,18 @@ const RevenueAssurancePage = () => {
 
       <ServiceInfoCard
         subCategories={subCategoriesWithIcon}
-        onReadMore={handleScrollToSection}
       />
 
-      <div className="bg-[#1C1C1C] p-10 px-28 flex gap-6" id="Managed SOC">
-        <div className="lg:w-1/2 h-full lg:h-auto flex-grow flex items-center justify-center">
-          <img
-            src="/asset1.jpg"
-            alt="Managed SOC"
-            className="w-full h-[32rem] md-down:h-[20rem] object-cover rounded-sm shadow-md"
-          />
-        </div>
-        <div className="w-1/2">
-          <TextSection
-            title={DetailedSection[0].title}
-            description={DetailedSection[0].detailedDescription}
-          />
-        </div>
+      <div className="bg-[#1C1C1C] p-5" id="Managed SOC">
+        <ManagedSOC
+          title={DetailedSection[0].title}
+          description={DetailedSection[0].detailedDescription}
+          imageUrl="/asset1.jpg"
+        />
       </div>
 
       <div
-        className="bg-[#1C1C1C] p-10 px-28 flex gap-6"
-        id="IS GRC & Consulting Services"
+        className="bg-[#1C1C1C] p-10 lg-down:p-5 px-36 flex gap-6 lg-down:flex-col lg-down:px-4"
       >
         <div className="w-1/2">
           <TextSection
@@ -103,7 +87,7 @@ const RevenueAssurancePage = () => {
           />
         </div>
         <div className="w-1/2">
-          <ContactFormSection />
+          <ContactFormSection buttonColor='#1B6D7E'/>
         </div>
       </div>
     </>

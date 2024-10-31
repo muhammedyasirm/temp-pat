@@ -1,13 +1,13 @@
 import React from "react";
 
-const StatItem = ({ icon, text }) => {
+const StatItem = ({ icon, text, textColor = "text-white" }) => {
   return (
     <div className="flex gap-10 md-down:gap-5 mb-6 text-start md-down:flex-col  md-down:mt-4">
       <div className="flex items-center md-down:gap-5">
-        <div className="w-10 h-10 min-w-10 min-h-10 flex items-center justify-center rounded-full mr-4">
+        <div className="w-9 h-9 min-w-9 min-h-9 flex items-center justify-center rounded-full mr-4">
           {icon}
         </div>
-        <p className="text-white text-lg md-down:text-sm font-montserrat">
+        <p className={`${textColor} text-lg md-down:text-sm font-montserrat`}>
           {text}
         </p>
       </div>
@@ -15,7 +15,7 @@ const StatItem = ({ icon, text }) => {
   );
 };
 
-const FeedbackSection = ({ cubePoints, cubeIcon }) => {
+const FeedbackSection = ({ cubePoints, cubeIcon, textColor = "text-white" }) => {
   const half = Math.ceil(cubePoints.length / 2);
   const leftPoints = cubePoints.slice(0, half);
   const rightPoints = cubePoints.slice(half);
@@ -28,8 +28,9 @@ const FeedbackSection = ({ cubePoints, cubeIcon }) => {
             {leftPoints.map((point, index) => (
               <StatItem
                 key={index}
-                icon={<img src={cubeIcon} alt="Cube" />}
+                icon={<img src={cubeIcon} alt="Cube"/>}
                 text={point.description}
+                textColor={textColor}
               />
             ))}
           </div>
@@ -40,6 +41,7 @@ const FeedbackSection = ({ cubePoints, cubeIcon }) => {
                 key={index}
                 icon={<img src={cubeIcon} alt="Cube" />} 
                 text={point.description}
+                textColor={textColor}
               />
             ))}
           </div>
