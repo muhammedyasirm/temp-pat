@@ -103,7 +103,6 @@ const InformationSecurityPage = () => {
       <ServiceBanner
         title={'INFORMATION SECURITY'}
         primaryColor={'#1B6F86'}
-        secondaryColor={'yellow'}
         rightImage="/sample.png"
       />
 

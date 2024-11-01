@@ -4,7 +4,7 @@ const StatItem = ({ icon, text, textColor = "text-white" }) => {
   return (
     <div className="flex gap-10 md-down:gap-5 mb-6 text-start md-down:flex-col  md-down:mt-4">
       <div className="flex items-center md-down:gap-5">
-        <div className="w-9 h-9 min-w-9 min-h-9 flex items-center justify-center rounded-full mr-4">
+        <div className="w-12 h-12 min-w-12 min-h-12 flex items-center justify-center rounded-full mr-4">
           {icon}
         </div>
         <p className={`${textColor} text-lg md-down:text-sm font-montserrat`}>
@@ -28,7 +28,7 @@ const FeedbackSection = ({ cubePoints, cubeIcon, textColor = "text-white" }) => 
             {leftPoints.map((point, index) => (
               <StatItem
                 key={index}
-                icon={<img src={cubeIcon} alt="Cube"/>}
+                icon={<img src={cubeIcon} alt="Cube" className="w-12 h-12 md-down:w-10 md-down:h-10 md-down:mt-1"/>}
                 text={point.description}
                 textColor={textColor}
               />
@@ -39,7 +39,7 @@ const FeedbackSection = ({ cubePoints, cubeIcon, textColor = "text-white" }) => 
             {rightPoints.map((point, index) => (
               <StatItem
                 key={index}
-                icon={<img src={cubeIcon} alt="Cube" />} 
+                icon={<img src={cubeIcon} alt="Cube" className="w-12 h-12 md-down:w-10 md-down:h-10 md-down:mt-1"/>} 
                 text={point.description}
                 textColor={textColor}
               />

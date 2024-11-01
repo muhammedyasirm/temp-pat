@@ -15,7 +15,7 @@ const SolutionPage = () => {
 
   return (
     <>
-      <SolutionBanner BannerImage={solutionData.BannerImage} />
+      <SolutionBanner BannerImage={solutionData.BannerImage} Title={solutionData.BannerTitle} />
       <TitleSection 
         mainTitle={solutionData.mainTitle} 
         titleDescription={solutionData.titleDescription} 

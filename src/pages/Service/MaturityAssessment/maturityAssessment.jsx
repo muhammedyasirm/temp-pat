@@ -56,7 +56,6 @@ const MaturityAssessmentPage = () => {
         title={'MATURITY ASSESSMENT'}
         subtitle={'Some Sub Title'}
         primaryColor={'#8ec63f'}
-        secondaryColor={'yellow'}
         rightImage="/MAheader.png"
       />
 

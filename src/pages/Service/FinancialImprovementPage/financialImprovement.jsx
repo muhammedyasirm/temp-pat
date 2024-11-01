@@ -48,8 +48,7 @@ const FinancialImprovementPage = () => {
       <ServiceBanner
         title={'FINANCIAL IMPROVEMENT'}
         subtitle={'Some Sub Title'}
-        primaryColor={'green'}
-        secondaryColor={'yellow'}
+        primaryColor={'#8ec63f'}
         rightImage="/headerpicFIS.png"
       />
 
@@ -70,7 +69,7 @@ const FinancialImprovementPage = () => {
           <TextSection description={DetailedSection[1]?.detailedDescription} />
         </div>
         <div className="w-1/2 lg-down:w-full">
-          <ContactFormSection buttonColor="green" />
+          <ContactFormSection buttonColor="#8ec63f" />
         </div>
       </div>
     </>

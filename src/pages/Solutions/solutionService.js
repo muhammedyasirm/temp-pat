@@ -1,7 +1,8 @@
 const solutions = [
   {
     "id": "asset-management",
-    "BannerImage": "/assetmgmnt.jpg",
+    "BannerImage": "/asset-mgnt.png",
+    "BannerTitle": "ASSET MANAGEMENT",
     "mainTitle": "Asset Management",
     "titleDescription": 
       "Assetspire’s Spire™: A Cutting-Edge Solution for Managing Data Centre Assets with Precision and Efficiency. With an ever-increasing demand for robust infrastructure management, Assetspire’s Spire™ platform rises to the challenge by offering a solution that not only simplifies asset management but ensures it is done with the highest degree of accuracy and ease. This groundbreaking platform equips businesses with the tools they need to manage and oversee their data center assets, transforming complex processes into seamless operations.",
@@ -29,6 +30,7 @@ const solutions = [
   {
     "id": "payment-solution",
     "BannerImage": "/payment-solution.jpg",
+    "BannerTitle": "PAYMENT",
     "mainTitle": "Innovative Mobile Payment Solution",
     "titleDescription": 
       "A seamless, secure, and innovative mobile payment platform that effortlessly connects your smartphone with a wide range of retailers and service providers. Whether you're paying for groceries, ordering takeout, hailing a cab, or making in-store purchases, our solution provides a fast, convenient, and secure way to handle transactions. No need for cash, cards, or wallets—just tap your phone to pay. Our platform ensures you can make transactions with ease, whether you're online or offline, offering both flexibility and peace of mind. Designed for users on the go, our payment solution is the future of mobile transactions, making everyday payments simple, quick, and safe.",
@@ -55,7 +57,8 @@ const solutions = [
   },
   {
     "id": "rafm-solution",
-    "BannerImage": "/carrier-service.jpg",
+    "BannerImage": "/rafm-header.png",
+    "BannerTitle": "RAFM",
     "mainTitle": "RAFM Solution",
     "titleDescription": 
       "Our advanced RAFM solution is designed to streamline implementation and reduce the timeline to a maximum of two months. Addressing operator risks, this solution unifies eight essential processes: Product and Offer Management, Rating and Billing, Order Entry and Provisioning, Network and Usage Management, Partner Management, Receivables Management, Customer Management, and Finance and Accounting. It offers comprehensive visibility and control with flexible implementation options tailored to your business needs.",
@@ -82,7 +85,8 @@ const solutions = [
   },  
   {
     "id": "site-profitability-solution",
-    "BannerImage": "/payment-solution2.jpg",
+    "BannerImage": "/site-p-header.png",
+    "BannerTitle": "SITE PROFITABILITY",
     "mainTitle": "Site Profitability Solution",
     "titleDescription": 
       "Our powerful software solution optimizes site profitability by meticulously analyzing site-specific revenues and expenses. With a focus on expenses like fuel, spare parts, security, and maintenance, it highlights critical cost factors impacting profitability. This solution leverages advanced AI algorithms to predict revenue cannibalization and suggests strategic site reallocation and management adjustments to maximize operational efficiency and ROI. By continuously monitoring performance, the system provides actionable insights that empower businesses to make data-driven decisions that improve site management and bottom-line performance.",
@@ -91,19 +95,19 @@ const solutions = [
     "subheading1Highlighted": "Comprehensive Expense Management",
     "subheading1Description": 
       "Our solution provides unparalleled financial visibility by breaking down site-level costs, including fuel, spare parts, security, and maintenance. By thoroughly analyzing these expenses, it highlights both profitability challenges and opportunities, offering businesses valuable insights for better cost management. The software tracks spending in real-time, allowing organizations to continuously monitor and quickly identify areas for improvement. This proactive approach helps optimize budgets, minimize inefficiencies, and improve financial outcomes, ensuring long-term profitability.",
-    "subheading1Image": "/Asset3-c.png",
+    "subheading1Image": "/site-p1.png",
   
     "subheading2": "SLA Monitoring & Reallocation",
     "subheading2Highlighted": "Operational Efficiency Optimization",
     "subheading2Description": 
       "The system is built to detect and alert users to any SLA breaches, ensuring strict compliance with service agreements and maintaining high standards of service delivery. Beyond monitoring, it provides intelligent site reallocation recommendations by analyzing site performance and location-specific factors, allowing businesses to optimize resource distribution effectively. This proactive approach ensures that resources are used where they are needed most, supporting business continuity and enhancing the overall efficiency of site operations across multiple regions, ensuring smoother and more reliable workflows.",
-    "subheading2Image": "/efficiency.png",
+    "subheading2Image": "/site-p2.png",
   
     "subheading3": "AI-Powered Predictive Analytics for Revenue Maximization",
     "subheading3Highlighted": "Strategic Revenue and Site Management",
     "subheading3Description": 
       "Leveraging advanced AI, this solution predicts potential revenue cannibalization risks and offers strategic site management recommendations to prevent losses. Tailored strategies for each site enable businesses to optimize operations and maximize ROI. AI-driven insights empower smarter, data-backed decisions, ensuring efficient resource allocation and reduced inefficiencies. This proactive approach supports sustainable profitability and provides a competitive edge in managing multiple locations. Contact us to discover how our site profitability solution can elevate your operations and enhance your bottom line.",
-    "subheading3Image": "/strategy.png",
+    "subheading3Image": "/site-p3.png",
   
     "displayImage": "/payment-solution2.jpg"
   }  

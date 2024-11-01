@@ -71,7 +71,6 @@ const FraudManagementPage = () => {
         title={'FRAUD DETECTION'}
         subtitle={'Some Sub Title'}
         primaryColor={'#f15930'}
-        secondaryColor={'yellow'}
         rightImage="/sample.png"
       />
 
