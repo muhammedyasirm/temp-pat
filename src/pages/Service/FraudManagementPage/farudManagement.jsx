@@ -68,10 +68,10 @@ const FraudManagementPage = () => {
   return (
     <>
       <ServiceBanner
-        title={'FRAUD DETECTION'}
+        title={'FRAUD MANAGEMENT'}
         subtitle={'Some Sub Title'}
         primaryColor={'#f15930'}
-        rightImage="/sample.png"
+        rightImage="/fraud-header.png"
       />
 
       <ServiceInfoCard

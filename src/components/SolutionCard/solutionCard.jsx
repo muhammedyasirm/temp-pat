@@ -4,7 +4,7 @@ import FeedbackSection from '../ServiceFeedBack/serviceFeedbackSection';
 const SolutionCard = ({ title, description, imageUrl, isgpoints }) => {
   return (
     <div className="flex flex-col w-[85%] lg-down:w-full mx-auto overflow-hidden rounded shadow-lg py-4">
-      <h2 className="text-4xl md-down:text-2xl font-barlow font-bold text-white ml-6 lg-down:ml-0 mb-3 max-w-[50%] md-down:max-w-full">
+      <h2 className="text-4xl md-down:text-2xl font-barlow font-bold text-white ml-6 lg-down:ml-0 mb-3 max-w-[50%] lg-down:max-w-full">
         {title}
       </h2>
       <div className="px-10 lg-down:px-0">

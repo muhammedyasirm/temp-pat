@@ -26,26 +26,19 @@ const DetailedSection = [
 ];
 
 const CarrierServicePage = () => {
-  const handleScrollToSection = (title) => {
-    const section = document.getElementById(title);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <>
       <ServiceBanner
         title={'CARRIER SERVICES'}
         subtitle={'Some Sub Title'}
-        primaryColor={'#863D2E'}
+        primaryColor={'#f15930'}
         secondaryColor={'yellow'}
         rightImage="/headerpicCS.png"
       />
 
       <ServiceInfoCard
         subCategories={subCategoriesWithIcon}
-        onReadMore={handleScrollToSection}
       />
 
       <div className="bg-[#1C1C1C] p-10 px-28 lg-down:px-4 flex gap-6 lg-down:flex-col">
@@ -53,7 +46,7 @@ const CarrierServicePage = () => {
           <TextSection description={DetailedSection[0]?.detailedDescription} />
         </div>
         <div className="w-1/2 lg-down:w-full">
-          <ContactFormSection buttonColor="#863D2E" />
+          <ContactFormSection buttonColor="#f15930" />
         </div>
       </div>
 

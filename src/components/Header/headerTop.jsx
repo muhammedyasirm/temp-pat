@@ -40,8 +40,8 @@ const Header = () => {
       },
       {
         category: [
-          { name: "FINANCIAL IMPROVEMENT", to: "/services/financial-improvement", color: "#8ec63f" },
           { name: "CARRIER SERVICES", to: "/services/carrier-services", color: "#f15930" },
+          { name: "FINANCIAL IMPROVEMENT", to: "/services/financial-improvement", color: "#8ec63f" },
           { name: "INFORMATION SECURITY", to: "/services/information-security", color: "#12d2d4" },
         ],
         border: "border-primary-green",
@@ -54,9 +54,9 @@ const Header = () => {
     () => [
       {
         category: [
-          { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution", color: "#8ec63f" },
           { name: "ASSET MANAGEMENT", to: "/solution/asset-management", color: "#f15930" },
-          { name: "RAFM SOLUTION", to: "/solution/rafm-solution", color: "#f15930" },
+          { name: "RAFM SOLUTION", to: "/solution/rafm-solution", color: "#8ec63f" },
+          { name: "PAYMENT SOLUTIONS", to: "/solution/payment-solution", color: "#12d2d4" },
         ],
         border: "border-primary-orange",
       },

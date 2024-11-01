@@ -1,6 +1,6 @@
 const caseStudies = [
   {
-    image: '/chart1.png',
+    image: '/carrier-card.png',
     title: 'Revenue Assurance for a Leading Telecom Operator in Morocco',
     company: 'INWI (Morocco)',
     description: 'INWI, a prominent telecom operator in Morocco, was experiencing substantial revenue leakage due to inefficiencies in billing processes and network usage management. After conducting a detailed RA Maturity Assessment, we implemented a tailored Revenue Assurance Managed Service (RAMS) to streamline their operations and improve financial performance.',
@@ -13,7 +13,7 @@ const caseStudies = [
     borderColor: 'border-primary-orange',
   },
   {
-    image: '/chart2.png',
+    image: '/finance-card.png',
     title: 'Flexible Data Model Visualization with Hubql and React Flow',
     company: 'Hubql',
     description: 'Hubql needed a solution to visualize complex data models effectively. The team aimed to turn static data into interactive visualizations to enable users to explore data relationships with ease. React Flow was chosen to meet this need, providing a feature-rich library for visualizing data structures dynamically.',
@@ -26,7 +26,7 @@ const caseStudies = [
     borderColor: 'border-primary-green',
   },
   {
-    image: '/chart3.png',
+    image: '/is-card.png',
     title: 'Revenue Assurance for a Leading Telecom Operator',
     company: 'INWI (Morocco)',
     description: 'INWI, a leading telecom operator in Morocco, was experiencing significant revenue leakage due to billing inaccuracies and inefficiencies in network usage management. We stepped in to provide a comprehensive revenue assurance solution using advanced analytics and a tailored service approach.',
@@ -39,7 +39,7 @@ const caseStudies = [
     borderColor: 'border-primary-blue',
   },
   {
-    image: '/chart2.png',
+    image: '/finance-card.png',
     title: 'Streamlined Workflow Automation for E-commerce Platform',
     company: 'Shopify',
     description: 'Shopify needed to streamline its order processing workflow to enhance efficiency and reduce errors. The existing manual processes were time-consuming and error-prone, affecting customer satisfaction. React Flow was utilized to build an automated workflow system to address these challenges.',
@@ -52,7 +52,7 @@ const caseStudies = [
     borderColor: 'border-primary-orange',
   },
   {
-    image: '/chart3.png',
+    image: '/is-card.png',
     title: 'Optimizing Cloud Infrastructure for Cost Efficiency',
     company: 'TechCorp',
     description: 'TechCorp was facing escalating cloud infrastructure costs due to inefficient resource utilization and lack of automation. We helped them optimize their cloud infrastructure using advanced monitoring and automated scaling strategies.',
@@ -65,7 +65,7 @@ const caseStudies = [
     borderColor: 'border-primary-green',
   },
   {
-    image: '/chart1.png',
+    image: '/carrier-card.png',
     title: 'Enhancing Customer Support with AI-Powered Chatbots',
     company: 'HelpDesk Pro',
     description: 'HelpDesk Pro needed to improve their customer support efficiency and reduce response times. We introduced AI-powered chatbots to handle routine customer inquiries, allowing support agents to focus on more complex issues.',

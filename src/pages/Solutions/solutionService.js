@@ -13,8 +13,8 @@ const solutions = [
       "Assetspire’s Spire™ platform is a flexible, configurable solution designed to meet the unique needs of data center operations. It excels in rapidly and accurately capturing any data center asset, serving as a central hub for managing critical data. By integrating advanced algorithms and seamless engineering, Spire™ ensures comprehensive asset tracking—from acquisition to real-time monitoring. It enhances workflows across systems like DCIM, CAFM, and CMDB, storing asset data in a consistent and easily retrievable format. This gives businesses real-time visibility and actionable insights into their infrastructure.",
     "subheading1Image": "/Asset1.1.png",
     
-    "subheading2": "Maximize Revenue, Optimize Resource Usage, and Reduce Operational Costs",
-    "subheading2Highlighted": "Operational Efficiency and Cost Reduction",
+    "subheading2": "Drive Efficiency and Boost Revenue",
+    "subheading2Highlighted": "Resource optimization and cost reduction",
     "subheading2Description": 
       "Spire™ optimizes operational efficiency by reclaiming underutilized resources such as space, power, and cooling. It allows businesses to make better use of their existing infrastructure while boosting revenue through optimized billing for asset usage. Spire™ also reduces energy consumption, leading to significant cost savings. With advanced analytics and asset tracking, it minimizes the need for on-site visits, streamlining operations. Additionally, Spire™ facilitates hardware repurposing, ensuring efficient operations without compromising control.",
     "subheading2Image": "/Asset2.1.png",

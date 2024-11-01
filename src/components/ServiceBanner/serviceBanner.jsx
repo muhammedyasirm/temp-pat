@@ -10,7 +10,7 @@ const ServiceBanner = ({ title, primaryColor, rightImage }) => {
         >
           <div className="flex flex-col text-center lg:text-left max-w-min">
             <h2
-              className="text-white text-[6.5rem] xl-down:text-[4.5rem] font-barlow font-bold text-left leading-[6rem]"
+              className="text-white text-[6rem] xxl-down:text-[4rem] font-barlow font-bold text-left leading-[6rem] xxl-down:leading-[4rem]"
               style={{ textShadow: "2px 2px 10px rgba(0, 0, 0, 0.5)" }}
             >
               {title}

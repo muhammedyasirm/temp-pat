@@ -120,11 +120,30 @@ const InformationSecurityPage = () => {
       </div>
 
       <div className="bg-[#1C1C1C] p-5" id="Information Security GRC">
-        <ManagedSOC
-          title={DetailedSection[1].title}
-          description={DetailedSection[1].detailedDescription}
-          imageUrl="/is-left.png"
-        />
+        <div className="flex flex-col w-[85%] lg-down:w-full mx-auto overflow-hidden rounded shadow-lg py-4">
+          <div className='flex'>
+            <div className='w-[50%] lg-down:hidden'></div>
+          <h2 className=" text-4xl md-down:text-2xl font-barlow font-bold text-white ml-6 lg-down:ml-0 mb-3 max-w-[50%] lg-down:max-w-full">
+            {DetailedSection[1].title}
+          </h2>
+          </div>
+          <div className="px-10 lg-down:px-0">
+            <div className="flex bg-[#e3e3e3] rounded lg-down:flex-col">
+            <div className="flex-1 -mt-16 lg-down:mt-0 mr-6 p-6 lg-down:p-4 lg-down:mr-0 max-h-[30rem] xl-down:max-h-full">
+                <img
+                  src="/is-left.png"
+                  alt={DetailedSection[1].title}
+                  className="object-cover w-full h-full lg-down:w-full lg-down:h-auto shadow-2xl"
+                />
+              </div>
+              <div className=" py-4 flex-1 lg-down:px-4 flex-col">
+                <p className="text-[#141414] text-lg font-montserrat md-down:text-sm">
+                  {DetailedSection[1].detailedDescription}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="text-left bg-[#1C1C1C] p-5 px-36 lg-down:px-4">
@@ -146,7 +165,7 @@ const InformationSecurityPage = () => {
           <TextSection description={DetailedSection[2]?.detailedDescription} />
         </div>
         <div className="w-1/2 lg-down:w-full">
-          <ContactFormSection />
+          <ContactFormSection buttonColor="#1B6D7E" />
         </div>
       </div>
     </>
