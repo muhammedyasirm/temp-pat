@@ -47,7 +47,7 @@ const FinancialImprovementPage = () => {
     <>
       <ServiceBanner
         title={'FINANCIAL IMPROVEMENT'}
-        subtitle={'Some Sub Title'}
+        subtitle={'Some Sub Titles'}
         primaryColor={'#8ec63f'}
         rightImage="/headerpicFIS.png"
       />
