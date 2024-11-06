@@ -80,13 +80,13 @@ const RevenueAssurancePage = () => {
       <div
         className="bg-[#1C1C1C] p-10 lg-down:p-5 px-36 flex gap-6 lg-down:flex-col lg-down:px-4"
       >
-        <div className="w-1/2">
+        <div className="w-1/2 lg-down:w-full">
           <TextSection
             title={DetailedSection[1].title}
             description={DetailedSection[1].detailedDescription}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 lg-down:w-full">
           <ContactFormSection buttonColor='#1B6D7E'/>
         </div>
       </div>

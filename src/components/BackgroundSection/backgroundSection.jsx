@@ -18,12 +18,12 @@ const SectionedBackground = () => {
     },
     {
       id: 2,
-      title: 'Payment Solutions',
+      title: 'Fraud Management',
       description: '02',
       fullDescription:
-        'Digitize payments guaranteeing security and convenience. With features like real-time tracking and fraud protection, a digital payment solution is a life transforming service.',
-      backgroundImage: '/payment-solution.jpg',
-      to: '/solution/payment-solution'
+        'Safeguard your business from fraud risks like Wangiri and IRSF. Our solutions enable real-time monitoring, automated fraud detection, and revenue protection. Prevent losses with robust defenses for seamless, secure payments.',
+      backgroundImage: '/fraud-header.png',
+      to: '/services/fraud-management'
     },
     {
       id: 3,

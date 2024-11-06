@@ -11,9 +11,9 @@ import ErrorBoundaryWrapper from './components/ErrorBoundary/errorBoundary';
 
 const HomePage = lazy(() => import('./pages/Home/homePage'));
 const ContactPage = lazy(() => import('./pages/Contact/contactPage'));
-const BlogPage = lazy(() => import('./pages/Blog/blog'));
-const CaseStudyPage = lazy(() => import('./pages/CaseStudy/caseStudy'));
-const EventPage = lazy(() => import('./pages/Event/eventPage'));
+// const BlogPage = lazy(() => import('./pages/Blog/blog'));
+// const CaseStudyPage = lazy(() => import('./pages/CaseStudy/caseStudy'));
+// const EventPage = lazy(() => import('./pages/Event/eventPage'));
 const SolutionPage = lazy(() => import('./pages/Solutions/solutionPage'));
 const InformationSecurityPage = lazy(() =>
   import('./pages/Service/InformationSecurityPage/informationSecurity')
@@ -44,10 +44,10 @@ function App() {
           <Suspense fallback={<Loader />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/case-study" element={<CaseStudyPage />} />
-              <Route path="/blog" element={<BlogPage />} />
+              {/* <Route path="/case-study" element={<CaseStudyPage />} /> */}
+              {/* <Route path="/blog" element={<BlogPage />} /> */}
               <Route path="/contact" element={<ContactPage />} />
-              <Route path="/events" element={<EventPage />} />
+              {/* <Route path="/events" element={<EventPage />} /> */}
               <Route path="/solution/:solutionId" element={<SolutionPage />} />
               <Route
                 path="/services/information-security"

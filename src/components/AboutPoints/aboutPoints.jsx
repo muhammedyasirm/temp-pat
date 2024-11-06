@@ -15,9 +15,9 @@ const ProfitAssurance = () => {
       <div className="flex gap-28 lg-down:gap-12 justify-center lg-down:flex-col">
         <div className="flex flex-col w-[40%] lg-down:w-full">
           <div className="text-left mt-5 md-down:mt-0">
-            <h3 className="text-4xl md-down:text-2xl font-semibold mb-4 font-barlow">
-              Enabling profitability for clients{' '}
-              <span className="text-primary-green font-bold">since 2014</span>,
+          <h3 className="text-4xl md-down:text-2xl font-semibold mb-4 font-barlow">
+              For 10 years we prevented fraud, delivered innovation and maximized revenue.{' '}
+              {/* <span className="text-primary-green font-bold">maximized revenue.</span> */}
             </h3>
             <p className="text-lg md-down:text-sm font-montserrat">
               Our strategies ensure that every dollar earned is accurately

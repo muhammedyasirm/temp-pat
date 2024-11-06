@@ -20,9 +20,9 @@ const Header = () => {
       { name: "HOME", to: "/" },
       { name: "SOLUTIONS", to: "/solution" },
       { name: "SERVICES", to: "/service" },
-      { name: "CASE STUDY", to: "/case-study" },
-      { name: "EVENTS", to: "/events" },
-      { name: "BLOG", to: "/blog" },
+      // { name: "CASE STUDY", to: "/case-study" },
+      // { name: "EVENTS", to: "/events" },
+      // { name: "BLOG", to: "/blog" },
       { name: "CONTACT", to: "/contact" },
     ],
     []

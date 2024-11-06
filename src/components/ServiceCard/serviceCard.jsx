@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 const CardSection = () => {
   const cards = [
     {
-      title: 'FRAUD DETECTION',
-      description: 'IRSF, Wangiri, Grey Routes',
+      title: 'PAYMENT SOLUTION',
+      description: 'Simple, Convenient & Secure',
       icon: '/orange-cube.png',
       borderColor: 'hover:border-primary-orange',
-      to:'/services/fraud-management'
+      to:'/solution/payment-solution'
     },
     {
       title: 'REVENUE ASSURANCE MS',
